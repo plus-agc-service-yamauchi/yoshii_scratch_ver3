@@ -1,0 +1,64 @@
+/* デザインA（スマートフォン） */
+.card {
+  background: #fff;
+  width: 54.34782609vw;
+  height: 20.38043478vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.260869565vw;
+}
+
+.bg-flower {
+  background: url(../img/bg-flower.jpg) no-repeat;
+  background-size: 100%;
+  padding: 10px 0 10px 0;
+}
+
+.grid-pc-center {
+  justify-items: center;
+  align-items: center;
+}
+
+/* デザインB（タブレット） */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* デザインC(PC) */
+@media screen and (min-width: 1025px) {
+  .card {
+    background: #fff;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25vw;
+    color: #256643;
+    border-radius: 10px;
+  }
+
+  .bg-flower {
+    background: url(../img/bg-flower.jpg) no-repeat;
+    background-size: 100%;
+    padding: 10px 0 10px 0;
+    font-size: 1.041666667vw;
+    line-height: 4.8rem;
+    letter-spacing: 1.8;
+    height: 231.505px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  td.tdl {
+    font-size: 1.041666667vw;
+    line-height: 7.4rem;
+    letter-spacing: 1.8;
+  }
+  td.tdr {
+    font-size: 1.041666667vw;
+    line-height: 7.4rem;
+    letter-spacing: 1.8;
+  }
+}

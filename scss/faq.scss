@@ -1,0 +1,186 @@
+/* デザインA（スマートフォン） */
+.faq_content {
+  background: #ffffff;
+  padding: 10px 10px;
+
+  margin-bottom: 40px;
+}
+hr {
+  border-width: 1px;
+  border-color: #256643;
+}
+.que {
+  font-size: 2.173913043vw;
+  font-weight: 800;
+  line-height: 1.93;
+  letter-spacing: 0.1em;
+}
+.que_text {
+  font-size: 2.173913043vw;
+  font-weight: 800;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+.ans {
+  font-size: 2.173913043vw;
+  font-weight: 800;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+.ans_text {
+  line-height: 1.3;
+  font-size: 1.902173913vw;
+  letter-spacing: 0.18em;
+  vertical-align: middle;
+}
+.que::before {
+  display: inline;
+  content: "";
+  background-image: url(../img/q.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  padding-right: 20px;
+  vertical-align: top;
+}
+.ans::before {
+  display: inline;
+  content: "";
+  background-image: url(../img/a.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  padding-right: 20px;
+  align-self: start !important;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* デザインB（タブレット） */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .faq_content {
+    background: #ffffff;
+    padding: 10px 50px;
+
+    margin-bottom: 40px;
+  }
+  hr {
+    border-width: 1px;
+    border-color: #256643;
+  }
+  .que {
+    font-size: 2vw;
+    font-weight: 800;
+    line-height: 1.93;
+    letter-spacing: 0.1em;
+  }
+  .que_text {
+    font-size: 2vw;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 0.1em;
+  }
+  .ans {
+    font-size: 2vw;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 0.1em;
+  }
+  .ans_text {
+    line-height: 1.3;
+    font-size: 1.953125vw;
+    letter-spacing: 0.18em;
+    vertical-align: middle;
+  }
+  .que::before {
+    display: inline;
+    content: "";
+    background-image: url(../img/q.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+    vertical-align: top;
+  }
+  .ans::before {
+    display: inline;
+    content: "";
+    background-image: url(../img/a.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+    align-self: start !important;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+}
+/* デザインC(PC) */
+@media screen and (min-width: 1025px) {
+  .faq_content {
+    background: #ffffff;
+    padding: 10px 50px;
+
+    margin-bottom: 40px;
+  }
+  hr {
+    border-width: 1px;
+    border-color: #256643;
+  }
+  .que {
+    font-size: 1.25vw;
+    font-weight: 800;
+    line-height: 1.93;
+    letter-spacing: 0.1em;
+  }
+  .que_text {
+    font-size: 1.25vw;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 0.1em;
+  }
+  .ans {
+    font-size: 1.25vw;
+    font-weight: 800;
+    line-height: 2;
+    letter-spacing: 0.1em;
+  }
+  .ans_text {
+    line-height: 1.3;
+    font-size: 1.041666667vw;
+    letter-spacing: 0.18em;
+    vertical-align: middle;
+  }
+  .que::before {
+    display: inline;
+    content: "";
+    background-image: url(../img/q.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+  }
+  .ans::before {
+    display: inline;
+    content: "";
+    background-image: url(../img/a.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    padding-right: 30px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+}
