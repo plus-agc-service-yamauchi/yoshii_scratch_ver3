@@ -285,7 +285,7 @@ footer {
   // フッタークラス
   .footerHeading {
     line-height: 1.10526;
-    font-size: 3.3vw;
+    font-size: 4vw;
     letter-spacing: 0.18em;
     margin-bottom: 10px;
     display: block;
@@ -295,12 +295,12 @@ footer {
   }
   .footerItem {
     line-height: 2;
-    font-size: 2.3vw;
+    font-size: 3.3vw;
     letter-spacing: 0.18em;
   }
   .footerItemStart {
     line-height: 2;
-    font-size: 2.3vw;
+    font-size: 3.3vw;
     letter-spacing: 0.18em;
   }
   .footerWrapper {
@@ -312,6 +312,52 @@ footer {
     margin: 0 15px 15px 0;
   }
 }
+
+/*SP コールボタン*/
+.sp-call {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #256643;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+  font-size: 14px;
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.sp-call a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.sp-call a::after {
+  position: sticky;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.sp-call a:hover::after {
+  color: #eeeeee;
+  bottom: -4px;
+  opacity: 1;
+  visibility: visible;
+}
+
 /*SP プランページ モーダルCSS */
 .modalArea {
   display: none;

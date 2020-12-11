@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/destyle.css" />
   </head>
@@ -81,6 +82,11 @@
               <li><a href="faq.html">よくあるご質問</a></li>
             </ul>
           </div>
+          <div class="sp sp-call">
+            <p style="padding: 0 10px;">24時間365日<br>お問い合わせはお電話・FAXで承ります。</p>
+            <p style="font-size:80%;">お問い合わせはこちら</p>
+            <p style="font-size:130%;"><a href="tel:0173-74-2033">&phone; 0173-74-2033</a></p>
+        </div>
         </nav>
         <!-- ナビゲーショントグル -->
         <div class="toggle_btn">
@@ -130,7 +136,7 @@
           <div class="bg-sub">
             <div class="container py30">
               <div>
-                <div class="mb30 spHidden tabVisible pcVisible">
+                <div class="mb30 spHidden tabVisible pcVisible wow animate__animated" data-animate="animate__fadeInUp">
                   <img
                     src="img/top_1.png"
                     usemap="#ImageMap1"
@@ -146,18 +152,22 @@
                     />
                   </map>
                 </div>
-                <div class="mb30 spVisible tabHidden pcHidden">
+                <!-- SP -->
+                <div class="mb30 spVisible tabHidden pcHidden wow animate__animated" data-animate="animate__fadeInUp">
                   <img src="img/top_sp_1.png" alt="" class="img100" />
                   <div class="item">
                     <h3 class="text-main">吉井造花店について</h3>
                     <p>
                       お客様の様々な不安を安心にかえるお手伝いをまごころでご奉仕させていただだきます。
                     </p>
+                    <a class="button" ontouchstart="">
+                      詳細はこちら
+                    </a>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="mb30 spHidden tabVisible pcVisible">
+                <div class="mb30 spHidden tabVisible pcVisible wow animate__animated" data-animate="animate__fadeInUp">
                   <img
                     src="img/top_2.png"
                     usemap="#ImageMap2"
@@ -173,18 +183,22 @@
                     />
                   </map>
                 </div>
-                <div class="mb30 spVisible tabHidden pcHidden">
+                <!-- SP -->
+                <div class="mb30 spVisible tabHidden pcHidden wow animate__animated" data-animate="animate__fadeInUp">
                   <img src="img/top_sp_2.png" alt="" class="img100" />
                   <div class="item">
                     <h3 class="text-main">お葬式プラン<span class="spHidden tabHidden">と安置室のご案内</span></h3>
                     <p>
                       宗旨・宗派を問わず、ご要望にお応えいたします。
                     </p>
+                    <a class="button" ontouchstart="">
+                      詳細はこちら
+                    </a>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="mb30 spHidden tabVisible pcVisible">
+                <div class="mb30 spHidden tabVisible pcVisible wow animate__animated" data-animate="animate__fadeInUp">
                   <img
                     src="img/top_3.png"
                     usemap="#ImageMap3"
@@ -200,18 +214,22 @@
                     />
                   </map>
                 </div>
-                <div class="mb30 spVisible tabHidden pcHidden">
+                <!-- SP -->
+                <div class="mb30 spVisible tabHidden pcHidden wow animate__animated" data-animate="animate__fadeInUp">
                   <img src="img/top_sp_3.png" alt="" class="img100" />
                   <div class="item">
                     <h3 class="text-main">御供物・御供花のご注文<span class="spHidden tabHidden"></h3>
                       <p>
                         お通夜・お葬儀、法要・法事などでご利用いただけます。
                       </p>
+                      <a class="button" ontouchstart="">
+                        詳細はこちら
+                      </a>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="mb30 spHidden tabVisible pcVisible">
+                <div class="mb30 spHidden tabVisible pcVisible wow animate__animated" data-animate="animate__fadeInUp">
                   <img
                     src="img/top_4.png"
                     usemap="#ImageMap4"
@@ -227,13 +245,17 @@
                     />
                   </map>
                 </div>
-                <div class="mb30 spVisible tabHidden pcHidden">
+                <!-- SP -->
+                <div class="mb30 spVisible tabHidden pcHidden wow animate__animated" data-animate="animate__fadeInUp">
                   <img src="img/top_sp_4.png" alt="" class="img100" />
                   <div class="item">
                     <h3 class="text-main">よくあるご質問</h3>
                     <p>
                       宗旨・宗派を問わず、ご要望にお応えいたします。
                     </p>
+                    <a class="button" ontouchstart="">
+                      詳細はこちら
+                    </a>
                   </div>
                 </div>
               </div>
@@ -281,7 +303,7 @@
                       />
                     </p>
                   </div>
-                  <div class="grid-pc-2 grid-tab-2">
+                  <div class="grid-sp-2 grid-pc-2 grid-tab-2">
                     <img
                       src="img/link_1.svg"
                       alt=""
@@ -350,10 +372,10 @@
           <li class="footerHeading">御供物のご注文</li>
           <li class="footerItemStart">御供花</li>
           <li class="footerItem">花環</li>
-          <li class="footerItem">盛り籠</li>
+          <li class="footerItem"><a href="">盛り籠</a></li>
         </ul>
         <ul>
-          <li class="footerHeading">よくあるご質問</li>
+          <li class="footerHeading"> <a href="faq.html">よくあるご質問</a></li>
         </ul>
       </div>
     </footer>
@@ -368,6 +390,7 @@
     <script>
       $("img[usemap]").rwdImageMaps();
     </script>
+    <script src="js/animated.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/slide.js"></script>

@@ -41,6 +41,41 @@
   }
 }
 
+a.button {
+  padding: 10px;
+  background: #ffffff;
+  border-style: Solid;
+  border-color: #006840;
+  border-color: #006840;
+  border-width: 1px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+a.button:hover {
+  padding: 10px;
+  background: #006840;
+  border-style: Solid;
+  border-color: #006840;
+  border-color: #006840;
+  border-width: 1px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   #slider {
