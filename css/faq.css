@@ -78,7 +78,7 @@ hr {
 }
 
 /* デザインB（タブレット） */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   .faq_content {
     background: #ffffff;
     padding: 10px 50px;
