@@ -37,9 +37,9 @@ $font16: 16px;
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: 30px 0;
 }
 
 /*SP ドロワー ナビゲーション*/
@@ -264,132 +264,133 @@ nav .inner ul li a:hover {
   border-radius: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  footer {
-    //   フッター全体設定
-    line-height: 1.3125;
-    font-size: 1.171875vw;
-    letter-spacing: 0.18em;
-    background: $bg-main;
+footer {
+  //   フッター全体設定
+  line-height: 1.3125;
+  font-size: 1.171875vw;
+  letter-spacing: 0.18em;
+  background: $bg-main;
+  color: #fff;
+  padding: 30px 0;
+  a {
     color: #fff;
-    padding: 30px 0;
-    a {
-      color: #fff;
-      text-decoration: none;
-    }
-    // フッタークラス
-    .footerHeading {
-      line-height: 1.10526;
-      font-size: 1.5625vw;
-      letter-spacing: 0.18em;
-      margin-bottom: 10px;
-    }
-    li.footerHeading::before {
-      content: "◆";
-    }
-    .footerItem {
-      line-height: 2;
-      font-size: 1.171875vw;
-      letter-spacing: 0.18em;
-    }
-    .footerWrapper {
-      width: 86.98%;
-      margin: 0 auto;
-    }
-    li {
-      display: inline-block;
-      margin: 0 0 15px 0;
-    }
-    li.footerItem::before {
-      content: "／";
-    }
+    text-decoration: none;
   }
-
-  /*SP プランページ モーダルCSS */
-  .modalArea {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 62px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  // フッタークラス
+  .footerHeading {
+    line-height: 1.10526;
+    font-size: 3.3vw;
+    letter-spacing: 0.18em;
+    margin-bottom: 10px;
+    display: block;
   }
-
-  .modalBg {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 30, 30, 0.9);
+  li.footerHeading::before {
+    content: "◆";
   }
-
-  .modalWrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    width: 90%;
-    height: 100vh;
-    padding: 30px;
-    background-color: #fff;
+  .footerItem {
+    line-height: 2;
+    font-size: 2.3vw;
+    letter-spacing: 0.18em;
   }
-
-  .modalContents {
-    font-size: 3vw;
-    li {
-      margin: 0 0 20px 0;
-    }
+  .footerItemStart {
+    line-height: 2;
+    font-size: 2.3vw;
+    letter-spacing: 0.18em;
   }
-
-  .closeModal {
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    cursor: pointer;
-    font-size: 30px !important;
+  .footerWrapper {
+    width: 86.98%;
+    margin: 0 auto;
   }
-
-  .general_button {
-    padding: 20px 10px;
-    background-color: #fff;
-    border: 2px solid #996580;
-    border-radius: 2px;
-    cursor: pointer;
-    width: 100%;
-    color: #996580;
-  }
-
-  .home_button {
-    padding: 20px 10px;
-    background-color: #fff;
-    border: 2px solid #a67d65;
-    border-radius: 2px;
-    cursor: pointer;
-    width: 100%;
-    color: #a67d65;
-  }
-
-  .enshrine_button {
-    padding: 20px 10px;
-    background-color: #fff;
-    border: 2px solid #65997d;
-    border-radius: 2px;
-    cursor: pointer;
-    width: 100%;
-    color: #65997d;
-  }
-
-  #openModal {
-    margin: 20px 0;
-  }
-  .copy {
-    line-height: 2.5;
-    font-size: 0.8333333333vw;
-    letter-spacing: 0.1em;
-    text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 15px 15px 0;
   }
 }
+/*SP プランページ モーダルCSS */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100vh;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.modalContents {
+  font-size: 3vw;
+  li {
+    margin: 0 0 20px 0;
+  }
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 30px !important;
+}
+
+.general_button {
+  padding: 20px 10px;
+  background-color: #fff;
+  border: 2px solid #996580;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  color: #996580;
+}
+
+.home_button {
+  padding: 20px 10px;
+  background-color: #fff;
+  border: 2px solid #a67d65;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  color: #a67d65;
+}
+
+.enshrine_button {
+  padding: 20px 10px;
+  background-color: #fff;
+  border: 2px solid #65997d;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100%;
+  color: #65997d;
+}
+
+#openModal {
+  margin: 20px 0;
+}
+.copy {
+  line-height: 2.5;
+  font-size: 2.8333333333vw;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */

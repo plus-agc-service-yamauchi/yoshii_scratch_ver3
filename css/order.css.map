@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": ";AAAA,iCAAiC;AAKjC,6BAA6B;AAI7B,mBAAmB",
+    "mappings": ";AAAA,iCAAiC;AAIjC,6BAA6B;AAG7B,mBAAmB",
     "sources": [
         "../scss/order.scss"
     ],
