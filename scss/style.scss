@@ -202,6 +202,9 @@ nav .inner ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 70%;
+  }
 }
 
 #headbar h1 {
@@ -242,10 +245,13 @@ nav .inner ul li a:hover {
 //   コンテナトップ
 .top {
   line-height: 2;
-  font-size: 3.260869565vw;
+  font-size: 4.260869565vw;
   letter-spacing: 0.18em;
   text-align: center;
   margin: 30px 0;
+  p {
+    font-size: 85%;
+  }
 }
 
 .info {
@@ -928,10 +934,18 @@ footer {
       line-height: 1.05;
       font-size: 1.041666667vw;
       letter-spacing: 0.18em;
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
+    }
+    li.footerHeading::before {
+      content: "";
     }
     .footerItem {
-      line-height: 2;
+      line-height: 1.05;
+      font-size: 0.8333333333vw;
+      letter-spacing: 0.18em;
+    }
+    .footerItemStart {
+      line-height: 1.05;
       font-size: 0.8333333333vw;
       letter-spacing: 0.18em;
     }

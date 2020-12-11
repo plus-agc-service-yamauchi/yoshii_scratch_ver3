@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* デザインA（スマートフォン） */
+#slider {
+  position: relative;
+  margin-top: 60px;
+}
+
+#slider img {
+  width: 100%;
+}
+
+#slider p {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+#slider .hero_text {
+  max-width: 100%;
+}
+
+.item {
+  margin: 0 20px;
+  padding: 20px 20px;
+  background: #fff;
+}
+
+.item h3 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.21rem;
+}
+
+.item p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.21rem;
+}
+
+/* デザインB（タブレット） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  #slider {
+    position: relative;
+  }
+  #slider img {
+    width: 100%;
+  }
+  #slider p {
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+  #slider .hero_text {
+    max-width: 100%;
+  }
+}
+
+/* デザインC(PC) */
+@media screen and (min-width: 1025px) {
+  /*スライダー*/
+  #slider {
+    position: relative;
+    margin: 0;
+  }
+  #slider img {
+    width: 100%;
+  }
+  #slider p {
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+  #slider .hero_text {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

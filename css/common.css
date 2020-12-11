@@ -106,13 +106,13 @@ body {
 
 .font-tracking4 {
   line-height: 1.3125;
-  font-size: 2.173913043vw;
+  font-size: 3.173913043vw;
   letter-spacing: 0.1em;
 }
 
 .font-tracking5 {
   line-height: 1.05;
-  font-size: 2.717391304vw;
+  font-size: 3.717391304vw;
   letter-spacing: 0.1em;
 }
 
@@ -1198,6 +1198,9 @@ body {
   }
   .font48 {
     font-size: 2.5vw;
+  }
+  .font36 {
+    font-size: 1.875vw;
   }
   .font24 {
     font-size: 1.25vw;
