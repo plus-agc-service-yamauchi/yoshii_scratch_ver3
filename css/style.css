@@ -905,6 +905,9 @@ footer li {
     width: 90.98%;
     margin: 0 auto;
   }
+  footer li {
+    display: block;
+  }
   #headbar {
     display: none;
   }
