@@ -823,7 +823,19 @@ footer {
 @media screen and (min-width: 1025px) {
   /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
   .mustHead {
+    position: relative;
     margin: 0;
+    h1 {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      font-size: 50px;
+      text-shadow: 3px 3px 20px rgba(253, 255, 253, 1);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      font-weight: 800;
+    }
   }
 
   .wrapper {
@@ -1036,6 +1048,30 @@ footer {
 
   .ir {
     width: 29.94791667vw;
+    a.link {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link:hover {
+      padding: 10px;
+      background: #006840;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
   }
 
   .button {
@@ -1179,5 +1215,17 @@ footer {
     bottom: -4px;
     opacity: 1;
     visibility: visible;
+  }
+
+  .fpoint {
+    padding: 10px;
+    background: #fffef5;
+    border: solid 1px #fffef5;
+    border-radius: 3px;
+    display: block;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
   }
 }

@@ -62,16 +62,17 @@
 a.button {
   padding: 10px;
   background: #ffffff;
-  border-style: Solid;
-  border-color: #006840;
-  border-color: #006840;
-  border-width: 1px;
+  border: solid 1px #006840;
   display: block;
   width: 80%;
   margin: 0 auto;
   margin-top: 20px;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
 }
 
 a.button:hover {
@@ -88,6 +89,8 @@ a.button:hover {
   font-size: 16px;
   text-align: center;
   color: #fff;
+  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
 }
 
 .animate__animated.animate__fadeInUp {
@@ -321,6 +324,7 @@ hr {
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  color: #256643;
 }
 
 .ans {
@@ -1440,7 +1444,19 @@ footer li {
 @media screen and (min-width: 1025px) {
   /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
   .mustHead {
+    position: relative;
     margin: 0;
+  }
+  .mustHead h1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 50px;
+    text-shadow: 3px 3px 20px #fdfffd;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-weight: 800;
   }
   .wrapper {
     display: -ms-grid;
@@ -1654,6 +1670,33 @@ footer li {
   .ir {
     width: 29.94791667vw;
   }
+  .ir a.link {
+    padding: 10px;
+    background: #ffffff;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
+  .ir a.link:hover {
+    padding: 10px;
+    background: #006840;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
   .button {
     background: #ffffff;
     background: white;
@@ -1786,6 +1829,17 @@ footer li {
     bottom: -4px;
     opacity: 1;
     visibility: visible;
+  }
+  .fpoint {
+    padding: 10px;
+    background: #fffef5;
+    border: solid 1px #fffef5;
+    border-radius: 3px;
+    display: block;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
