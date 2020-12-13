@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,AAAA,oBAAoB,CAAC;EACrC,kBAAkB,CAAA,GAAC;CACpB;;AACD,AAAA,kBAAkB,AAAA,qBAAqB,CAAC;EACtC,kBAAkB,CAAA,GAAC;CACpB",
+    "sources": [
+        "../scss/option.scss"
+    ],
+    "names": [],
+    "file": "option.css"
+}

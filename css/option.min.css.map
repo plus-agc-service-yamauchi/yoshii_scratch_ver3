@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,AAAA,oBAAoB,AAAC,CACrC,kBAAkB,CAAA,GAAC,CACpB,AACD,AAAA,kBAAkB,AAAA,qBAAqB,AAAC,CACtC,kBAAkB,CAAA,GAAC,CACpB",
+    "sources": [
+        "../scss/option.scss"
+    ],
+    "names": [],
+    "file": "option.min.css"
+}
