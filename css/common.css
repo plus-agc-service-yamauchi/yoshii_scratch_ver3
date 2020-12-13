@@ -825,6 +825,9 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+  html {
+    scroll-behavior: smooth;
+  }
   .m10 {
     margin: 0.9765625vh 0.9765625vw;
   }
@@ -1193,6 +1196,9 @@ body {
 }
 
 @media screen and (min-width: 1025px) {
+  html {
+    scroll-behavior: smooth;
+  }
   .font60 {
     font-size: 3.125vw;
   }
