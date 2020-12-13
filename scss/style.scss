@@ -208,7 +208,6 @@ nav .inner ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-
   span {
     font-size: 70%;
   }
@@ -845,14 +844,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     div {
       position: fixed;
       width: 13.02083333vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 

@@ -1469,6 +1469,8 @@ footer li {
   .sidebar div {
     position: fixed;
     width: 13.02083333vw;
+  }
+  .sidebar div a {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
