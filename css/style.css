@@ -685,7 +685,20 @@ td.tdr {
 
 /* デザインA（スマートフォン） */
 .mustHead {
+  position: relative;
   margin: 60px 0 0 0;
+}
+
+.mustHead h1 {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  font-size: 20px;
+  text-shadow: 3px 3px 20px #fdfffd;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-weight: 800;
 }
 
 .sidebar {
@@ -1121,7 +1134,19 @@ footer li {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
   .mustHead {
+    position: relative;
     margin: 60px 0 0 0;
+  }
+  .mustHead h1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 50px;
+    text-shadow: 3px 3px 20px #fdfffd;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-weight: 800;
   }
   .sidebar {
     display: none;
