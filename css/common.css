@@ -35,7 +35,7 @@ body {
 }
 
 .font24 {
-  font-size: 3.260869565vw;
+  font-size: 4.2vw;
 }
 
 .font20 {
@@ -88,19 +88,19 @@ body {
 
 .font-tracking1 {
   line-height: 2;
-  font-size: 2.717391304vw;
+  font-size: 3.717391304vw;
   letter-spacing: 0.18em;
 }
 
 .font-tracking2 {
   line-height: 2.12625;
-  font-size: 2.173913043vw;
+  font-size: 2.6vw;
   letter-spacing: 0.18em;
 }
 
 .font-tracking3 {
-  line-height: 3;
-  font-size: 2.173913043vw;
+  line-height: 2.1;
+  font-size: 2.6vw;
   letter-spacing: 0.18em;
 }
 

@@ -12,9 +12,8 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/order.css" />
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/common.min.css" />
     <link rel="stylesheet" href="css/destyle.css" />
   </head>
 
@@ -22,7 +21,7 @@
     <header>
       <!-- SP ヘッダーバー -->
       <div id="headbar">
-        <h1 class="text-main"><a href="index.html">有限会社 吉井造花店</a></h1>
+        <h1 class="text-main"><a href="index.html"><span>有限会社</span> 吉井造花店</a></h1>
       </div>
       <!-- ドロワーナビゲーション -->
       <div id="navArea">
@@ -364,8 +363,17 @@
     </footer>
     <div class="copy text-center">©️2020 有限会社 吉井造花店</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/slide.js"></script>
+    <script src="js/menu.min.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() { ga.q.push(arguments) };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>

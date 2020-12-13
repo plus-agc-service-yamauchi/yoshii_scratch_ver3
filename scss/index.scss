@@ -99,6 +99,54 @@ a.button:hover {
   #slider .hero_text {
     max-width: 100%;
   }
+  .inner-left {
+    z-index: 1;
+  }
+  .inner-right {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      line-height: 4rem;
+      letter-spacing: 1rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.6rem;
+      padding: 0 42px;
+    }
+  }
+  .inner-left-2 {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      line-height: 4rem;
+      letter-spacing: 1rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.6rem;
+      padding: 0 42px;
+    }
+  }
+  .inner-right-2 {
+    z-index: 1;
+  }
 }
 
 /* デザインC(PC) */
@@ -125,5 +173,59 @@ a.button:hover {
 
   #slider .hero_text {
     max-width: 100%;
+  }
+  .inner-left {
+    margin: 0 -100px 0 0;
+    z-index: 1;
+  }
+  .inner-right {
+    background: #fff;
+    margin: 50px 0 -50px -200px;
+    padding: 20px 20px 20px 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-size: 2.4rem;
+      line-height: 4rem;
+      letter-spacing: 1rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.6rem;
+      padding: 0 42px;
+    }
+  }
+  .inner-left-2 {
+    background: #fff;
+    margin: 50px -200px -50px 0;
+    padding: 20px 315px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      text-align: center;
+      margin: 0 0 10px 0;
+      font-size: 2.4rem;
+      line-height: 4rem;
+      letter-spacing: 1rem;
+      font-weight: 800;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.6rem;
+      padding: 0 42px;
+    }
+  }
+  .inner-right-2 {
+    margin: 0 0 0 -100px;
+    z-index: 1;
   }
 }

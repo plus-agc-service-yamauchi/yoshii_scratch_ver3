@@ -16,7 +16,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 3.260869565vw;
+  font-size: 3.717391304vw;
   color: #256643;
   border-radius: 10px;
   margin: 0 auto;
@@ -24,9 +24,12 @@
 
 .bg-flower {
   background: url(../img/bg-flower.jpg) no-repeat;
-  background-size: 100%;
-  padding: 20px;
-  text-align: center;
+  background-size: cover;
+  background-position: left center;
+  padding: 50px 10px;
+  text-align: left;
+  font-size: 3.717391304vw;
+  line-height: 2.3rem;
 }
 
 .grid-pc-center {

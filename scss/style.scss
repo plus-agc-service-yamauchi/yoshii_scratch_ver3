@@ -1,3 +1,9 @@
+@import "plan.scss";
+@import "index.scss";
+@import "order.scss";
+@import "faq.scss";
+@import "about.scss";
+
 $demibold: 600;
 $extrabold: 800;
 $text-main: #256643;
@@ -202,6 +208,7 @@ nav .inner ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+
   span {
     font-size: 70%;
   }
@@ -249,6 +256,7 @@ nav .inner ul li a:hover {
   letter-spacing: 0.18em;
   text-align: center;
   margin: 30px 0;
+
   p {
     font-size: 85%;
   }
@@ -279,10 +287,12 @@ footer {
   color: #fff;
   z-index: 2;
   padding: 30px 0;
+
   a {
     color: #fff;
     text-decoration: none;
   }
+
   // フッタークラス
   .footerHeading {
     line-height: 1.10526;
@@ -291,6 +301,7 @@ footer {
     margin-bottom: 10px;
     display: block;
   }
+
   .footerItem {
     line-height: 2;
     font-size: 3.3vw;
@@ -307,6 +318,7 @@ footer {
     width: 86.98%;
     margin: 0 auto;
   }
+
   li {
     display: inline-block;
     margin: 0 15px 15px 0;
@@ -320,11 +332,13 @@ footer {
   bottom: 0;
   z-index: 99;
   background: #256643;
-  width: 500px;
+  width: 100%;
   text-align: center;
   color: #ffffff;
   padding: 20px 0;
   font-size: 14px;
+  transition: all 0.5s;
+
   p {
     margin-bottom: 10px;
   }
@@ -390,6 +404,7 @@ footer {
 
 .modalContents {
   font-size: 3vw;
+
   li {
     margin: 0 0 20px 0;
   }
@@ -411,6 +426,7 @@ footer {
   cursor: pointer;
   width: 100%;
   color: #996580;
+  font-size: 3.717391304vw;
 }
 
 .home_button {
@@ -421,6 +437,7 @@ footer {
   cursor: pointer;
   width: 100%;
   color: #a67d65;
+  font-size: 3.717391304vw;
 }
 
 .enshrine_button {
@@ -431,11 +448,13 @@ footer {
   cursor: pointer;
   width: 100%;
   color: #65997d;
+  font-size: 3.717391304vw;
 }
 
 #openModal {
   margin: 20px 0;
 }
+
 .copy {
   line-height: 2.5;
   font-size: 2.8333333333vw;
@@ -459,6 +478,7 @@ footer {
     margin: 0 auto;
     padding: 30px 0;
   }
+
   /*Tab ドロワー ナビゲーション*/
   nav {
     display: block;
@@ -672,6 +692,7 @@ footer {
     @include fontsize(16, 28);
     @include tracking(200);
   }
+
   //   コンテナトップ
   .top {
     line-height: 2;
@@ -706,10 +727,12 @@ footer {
     color: #fff;
     z-index: 2;
     padding: 30px 0;
+
     a {
       color: #fff;
       text-decoration: none;
     }
+
     // フッタークラス
     .footerHeading {
       line-height: 1.10526;
@@ -717,31 +740,37 @@ footer {
       letter-spacing: 0.18em;
       margin-bottom: 20px;
     }
+
     .footerItemStart {
       line-height: 2;
       font-size: 1.171875vw;
       letter-spacing: 0.18em;
     }
+
     .footerItem {
       line-height: 2;
       font-size: 1.171875vw;
       letter-spacing: 0.18em;
     }
+
     .footerWrapper {
       width: 86.98%;
       margin: 0 auto;
     }
+
     li {
       display: block;
       margin: 0 15px 15px 0;
     }
   }
+
   .copy {
     line-height: 2.5;
     font-size: 0.8333333333vw;
     letter-spacing: 0.1em;
     text-align: center;
   }
+
   /*SP コールボタン*/
   .sp-call {
     position: fixed;
@@ -754,6 +783,8 @@ footer {
     color: #ffffff;
     padding: 20px 0;
     font-size: 14px;
+    transition: all 0.5s;
+
     p {
       margin-bottom: 10px;
     }
@@ -794,22 +825,27 @@ footer {
   .mustHead {
     margin: 0;
   }
+
   .wrapper {
-    display: grid; /* グリッドレイアウト */
+    display: grid;
+    /* グリッドレイアウト */
     grid-template-columns: 86.98% 1fr;
   }
+
   //   コンテナ
   .container {
     width: 83.23%;
     margin: 0 auto;
     padding: 30px 0;
   }
+
   .sidebar {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     div {
       position: fixed;
       width: 13.02083333vw;
@@ -819,6 +855,7 @@ footer {
       align-items: center;
     }
   }
+
   /*ドロワー ナビゲーション*/
   nav {
     display: block;
@@ -979,9 +1016,10 @@ footer {
     padding: 20px 0;
     line-height: 28px;
     color: #ffffff;
-    @include fontsize(16, 28);
+    @include fontsize(14, 28);
     @include tracking(200);
   }
+
   //   コンテナトップ
   .top {
     line-height: 2;
@@ -1026,10 +1064,32 @@ footer {
     color: #fff;
     z-index: 2;
     padding: 30px 0;
+
     a {
       color: #fff;
       text-decoration: none;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
     }
+
+    a::after {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform 0.3s;
+    }
+
+    a:hover::after {
+      transform: scale(1, 1);
+    }
+
     // フッタークラス
     .footerHeading {
       line-height: 1.05;
@@ -1043,30 +1103,36 @@ footer {
       font-size: 0.8333333333vw;
       letter-spacing: 0.18em;
     }
+
     .footerItemStart {
       line-height: 1.05;
       font-size: 0.8333333333vw;
       letter-spacing: 0.18em;
     }
+
     .footerWrapper {
       /* width: 86.98%; 正*/
       // カスタム
       width: 90.98%;
       margin: 0 auto;
     }
+
     li {
       display: block;
     }
   }
+
   #headbar {
     display: none;
   }
+
   .copy {
     line-height: 2.5;
     font-size: 0.8333333333vw;
     letter-spacing: 0.1em;
     text-align: center;
   }
+
   /*SP コールボタン*/
   .sp-call {
     position: fixed;
@@ -1079,6 +1145,8 @@ footer {
     color: #ffffff;
     padding: 20px 0;
     font-size: 14px;
+    transition: all 0.5s;
+
     p {
       margin-bottom: 10px;
     }
