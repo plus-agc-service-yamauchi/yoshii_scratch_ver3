@@ -68,12 +68,12 @@ $(window).on("scroll", function() {
   scrollPosition = $(window).height() + $(window).scrollTop();
   footHeight = $("footer").innerHeight();
   if (scrollHeight - scrollPosition <= footHeight) {
-    $("#topBtn").css({
+    $("logo").css({
       "position": "absolute",
       "bottom": footHeight + 0
     });
   } else {
-    $("#topBtn").css({
+    $("logo").css({
       "position": "fixed",
       "bottom": "0"
     });
