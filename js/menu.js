@@ -63,19 +63,19 @@ window.onscroll = function() {
 
 
 // Footer Stop
-// $(window).on("scroll", function() {
-//   scrollHeight = $(document).height();
-//   scrollPosition = $(window).height() + $(window).scrollTop();
-//   footHeight = $("footer").innerHeight();
-//   if (scrollHeight - scrollPosition <= footHeight) {
-//     $(".sideFooter").css({
-//       "position": "absolute",
-//       "bottom": footHeight + 0
-//     });
-//   } else {
-//     $(".sideFooter").css({
-//       "position": "fixed",
-//       "bottom": "0"
-//     });
-//   }
-// });
+$(window).on("scroll", function() {
+  scrollHeight = $(document).height();
+  scrollPosition = $(window).height() + $(window).scrollTop();
+  footHeight = $("footer").innerHeight();
+  if (scrollHeight - scrollPosition <= footHeight) {
+    $("#topBtn").css({
+      "position": "absolute",
+      "bottom": footHeight + 0
+    });
+  } else {
+    $("#topBtn").css({
+      "position": "fixed",
+      "bottom": "0"
+    });
+  }
+});
