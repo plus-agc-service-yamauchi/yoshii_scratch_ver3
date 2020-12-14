@@ -280,6 +280,31 @@ nav .inner ul li a:hover {
 
 .ir {
   width: 100%;
+  margin-bottom: 30px;
+  a.link {
+    padding: 10px;
+    background: #ffffff;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
+  a.link:hover {
+    padding: 10px;
+    background: #006840;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
 }
 
 .button {
@@ -474,6 +499,32 @@ footer {
   text-align: center;
 }
 
+.fpoint {
+  padding: 10px;
+  background: #fffef5;
+  border: solid 1px #fffef5;
+  border-radius: 3px;
+  display: block;
+  width: 80%;
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.topBtn {
+  display: none;
+  /* position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #256643;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px; */
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
@@ -516,7 +567,7 @@ footer {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transition: all 0.5s;
-    z-index: 3;
+    z-index: 4;
     opacity: 0;
   }
 
@@ -732,6 +783,54 @@ footer {
 
   .ir {
     width: 100%;
+    .fpoint {
+      padding: 10px;
+      background: #fffef5;
+      border: solid 1px #fffef5;
+      border-radius: 3px;
+      display: block;
+      width: 60%;
+      margin-top: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+    a.link {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link:hover {
+      padding: 10px;
+      background: #006840;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+  }
+  .topBtn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background: #256643;
+    width: 13.02%;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 28px;
+    color: #ffffff;
+    @include fontsize(12, 28);
+    @include tracking(200);
   }
 
   .button {
@@ -840,6 +939,17 @@ footer {
     bottom: -4px;
     opacity: 1;
     visibility: visible;
+  }
+  .topBtn:before {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .topBtn:hover {
+    opacity: 0.7;
   }
 }
 
@@ -1079,7 +1189,7 @@ footer {
       border-radius: 3px;
       display: block;
       width: 100%;
-      font-size: 12px;
+      font-size: 16px;
       text-align: center;
       transition: 0.2s;
       box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -1091,7 +1201,7 @@ footer {
       border-radius: 3px;
       display: block;
       margin: 0 auto;
-      font-size: 12px;
+      font-size: 16px;
       text-align: center;
       color: #fff;
       box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -1249,13 +1359,11 @@ footer {
     display: block;
     width: 60%;
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
   }
+
   /*トップへ戻るボタン*/
-  #topBtn {
-    display: none;
-  }
   .topBtn {
     position: fixed;
     right: 0;

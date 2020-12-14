@@ -78,8 +78,11 @@ $(function () {
       });
     } else { // それ以外は画面下から20pxの位置に固定
       topBtn.css({
-      "position":"fixed",
-      "bottom": "0"
+        "position":"fixed",
+        "width":"30%",
+      "display":"flex",
+      "top": "50%",
+      "justify-content":"center",
     });
     }
 
