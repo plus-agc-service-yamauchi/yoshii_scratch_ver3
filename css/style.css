@@ -2014,5 +2014,40 @@ footer li {
   .topBtn:hover {
     opacity: 0.7;
   }
+  .ie_alert {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: #c43434;
+    /* rgba未対応の古いIE用 */
+    background: rgba(196, 52, 52, 0.95);
+    text-align: center;
+    padding: 10% 0;
+    z-index: 1000;
+  }
+  .ie_alert span,
+  .ie_alert p,
+  .ie_alert a {
+    color: #fff;
+  }
+  .ie_alert span {
+    display: block;
+    font-size: 80px;
+  }
+  .ie_alert p {
+    font-size: 20px;
+  }
+  .ie_alert a {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 8px 80px;
+    border: solid 1px #fff;
+  }
+  .ie_alert a:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

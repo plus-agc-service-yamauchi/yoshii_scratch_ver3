@@ -1388,7 +1388,7 @@ footer {
   .topBtn:hover {
     opacity: 0.7;
   }
-  .ie_alert{
+  .ie_alert {
     position: fixed;
     top: 5%;
     left: 5%;
@@ -1399,25 +1399,27 @@ footer {
     text-align: center;
     padding: 10% 0;
     z-index: 1000;
-    span,p,a{
-        color: #fff;
+    span,
+    p,
+    a {
+      color: #fff;
     }
-    span{
-        display: block;
-        font-size: 80px;
+    span {
+      display: block;
+      font-size: 80px;
     }
-    p{
-        font-size: 20px;
+    p {
+      font-size: 20px;
     }
-    a{
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 20px;
-        padding: 8px 80px;
-        border: solid 1px #fff;
-        &:hover{
-            background: rgba(255,255,255,0.1);
-        }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 8px 80px;
+      border: solid 1px #fff;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
     }
-}
+  }
 }
