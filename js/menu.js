@@ -63,19 +63,25 @@ window.onscroll = function() {
 
 
 // Footer Stop
-$(window).on("scroll", function() {
-  scrollHeight = $(document).height();
-  scrollPosition = $(window).height() + $(window).scrollTop();
-  footHeight = $("footer").innerHeight();
-  if (scrollHeight - scrollPosition <= footHeight) {
-    $("logo").css({
-      "position": "absolute",
-      "bottom": footHeight + 0
-    });
-  } else {
-    $("logo").css({
-      "position": "fixed",
+$(function () {
+  var topBtn = $('.logo'); // ボタンを指定
+
+  $(window).on("scroll", function () {
+
+    scrollHeight = $(document).height();
+    scrollPosition = $(window).height() + $(window).scrollTop();
+    footHeight = $("footer").innerHeight(); // ここでフッターの高さを取得
+    if ( scrollHeight - scrollPosition  <= footHeight ) { // フッター付近まで来たら
+      topBtn.css({
+        "position":"absolute",
+        "bottom": footHeight + 0 // フッターの65px上で止まる
+      });
+    } else { // それ以外は画面下から20pxの位置に固定
+      topBtn.css({
+      "position":"fixed",
       "bottom": "0"
     });
-  }
+    }
+
+  });
 });
