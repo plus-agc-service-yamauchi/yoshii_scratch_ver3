@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /* デザインA（スマートフォン） */
+span.drawer:before {
+  content: "▶";
+  margin-right: 5px;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .general_button {
