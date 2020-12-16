@@ -698,12 +698,13 @@ td.tdr {
   position: absolute;
   top: 50%;
   right: 5%;
-  font-size: 20px;
+  font-size: 6.25vw;
   text-shadow: 3px 3px 20px #fdfffd;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   font-weight: 800;
+  letter-spacing: 0.2rem;
 }
 
 .sidebar {
@@ -1307,12 +1308,13 @@ a.show {
     position: absolute;
     top: 50%;
     right: 5%;
-    font-size: 50px;
+    font-size: 4vw;
     text-shadow: 3px 3px 20px #fdfffd;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     font-weight: 800;
+    letter-spacing: 0.4rem;
   }
   .sidebar {
     display: none;
@@ -1707,12 +1709,13 @@ a.show {
     position: absolute;
     top: 50%;
     right: 5%;
-    font-size: 50px;
+    font-size: 3.125vw;
     text-shadow: 3px 3px 20px #fdfffd;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     font-weight: 800;
+    letter-spacing: 1rem;
   }
   .wrapper {
     display: -ms-grid;
