@@ -1,110 +1,110 @@
 /* デザインA（スマートフォン） */
 .card {
-  background: #fff;
-  width: 100%;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.717391304vw;
-  color: #256643;
-  border-radius: 10px;
-  margin: 0 auto;
+    background: #fff;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.717391304vw;
+    color: #256643;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 
 .bg-flower {
-  background: url(../img/bg-flower.jpg) no-repeat;
-  background-size: cover;
-  background-position: left center;
-  padding: 50px 10px;
-  text-align: left;
-  font-size: 3.717391304vw;
-  line-height: 2.3rem;
+    background: url(../img/bg-flower.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    padding: 50px 10px;
+    text-align: left;
+    font-size: 3.717391304vw;
+    line-height: 2.3rem;
 }
 
 .grid-pc-center {
-  justify-items: center;
-  align-items: center;
+    justify-items: center;
+    align-items: center;
 }
 
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
 
 tr {
-  border-bottom: solid 1px #6b7570;
-  margin-bottom: 20px;
+    border-bottom: solid 1px #6b7570;
+    margin-bottom: 20px;
 }
 
 td.tdl {
-  font-size: 14px;
-  line-height: 1.4rem;
-  letter-spacing: 1.8;
-  width: 20%;
-  padding: 20px 0;
-  color: #091911;
+    font-size: 14px;
+    line-height: 1.4rem;
+    letter-spacing: 1.8;
+    width: 20%;
+    padding: 20px 0;
+    color: #091911;
 }
 
 td.tdr {
-  width: 80%;
-  font-size: 14px;
-  line-height: 1.4rem;
-  letter-spacing: 1.8;
-  padding: 20px 0;
-  color: #091911;
+    width: 80%;
+    font-size: 14px;
+    line-height: 1.4rem;
+    letter-spacing: 1.8;
+    padding: 20px 0;
+    color: #091911;
 }
 
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .card {
-    background: #fff;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.6vw;
-    color: #256643;
-    border-radius: 10px;
-  }
+    .card {
+        background: #fff;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6vw;
+        color: #256643;
+        border-radius: 10px;
+    }
 
-  .bg-flower {
-    background: url(../img/bg-flower.jpg) no-repeat;
-    background-size: cover;
-    padding: 10px 0 10px 0;
-    font-size: 2.3vw;
-    line-height: 4.8rem;
-    letter-spacing: 1.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .bg-flower {
+        background: url(../img/bg-flower.jpg) no-repeat;
+        background-size: cover;
+        padding: 10px 0 10px 0;
+        font-size: 2.3vw;
+        line-height: 4.8rem;
+        letter-spacing: 1.8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* デザインC(PC) */
 @media screen and (min-width: 1025px) {
-  .card {
-    background: #fff;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.25vw;
-    color: #256643;
-    border-radius: 10px;
-  }
+    .card {
+        background: #fff;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25vw;
+        color: #256643;
+        border-radius: 10px;
+    }
 
-  .bg-flower {
-    background: url(../img/bg-flower.jpg) no-repeat;
-    background-size: cover;
-    padding: 10px 0 10px 0;
-    font-size: 1.041666667vw;
-    line-height: 4.8rem;
-    letter-spacing: 1.8;
-    height: 231.505px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .bg-flower {
+        background: url(../img/bg-flower.jpg) no-repeat;
+        background-size: cover;
+        padding: 10px 0 10px 0;
+        font-size: 1.041666667vw;
+        line-height: 4.8rem;
+        letter-spacing: 1.8;
+        height: 231.505px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
