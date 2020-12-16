@@ -2054,5 +2054,34 @@ footer li {
   .ie_alert a:hover {
     background: rgba(255, 255, 255, 0.1);
   }
+  label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding: 15px;
+    line-height: 1;
+    color: #fff;
+    background: green;
+    cursor: pointer;
+  }
+  input {
+    display: none;
+  }
+  .foot_menu ul {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    list-style: none;
+  }
+  .foot_menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  #type1:checked ~ #links1 li,
+  #type2:checked ~ #links2 li {
+    height: 54px;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
