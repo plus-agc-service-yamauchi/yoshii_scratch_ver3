@@ -22,14 +22,14 @@
     <header>
         <!-- SP ヘッダーバー -->
         <div id="headbar">
-            <p class="text-main"><a href="/"><span>有限会社</span> 吉井造花店</a></p>
+            <p class="text-main"><a href="index.html"><span>有限会社</span> 吉井造花店</a></p>
         </div>
         <!-- ドロワーナビゲーション -->
         <div id="navArea">
             <nav>
                 <div class="inner">
                     <ul class="menu_list">
-                        <li><a href="/">トップページ</a></li>
+                        <li><a href="index.html">トップページ</a></li>
                         <li class="nav_item">
                             <a href="#" class="js-dropdown">吉井造花店のご案内<span>&#9662;</span></a>
                             <div class="panel js-dropdown-menu">
@@ -232,7 +232,7 @@
             <div class="right">
                 <!-- サイドバー -->
                 <div class="sidebar">
-                    <div class="fadeout"><a href="/"><img src="img/logo.svg" alt="" class="img-pc-30" /></a></div>
+                    <div class="fadeout"><a href="index.html"><img src="img/logo.svg" alt="" class="img-pc-30" /></a></div>
                     <div class="sideFooter fadeout">
                         <p>お問い合わせはこちら</p>
                         <p>
@@ -246,20 +246,50 @@
     <!-- フッター -->
     <a href="#" class="topBtn" id="topBtn">トップへ戻る</a>
     <footer>
+        <div class="spVisible tabHidden pcHidden">
+        <div class="accbox">
+            <a class="cssacc" href="index.html"><span>トップページ</span></a>
+            <input type="checkbox" id="label2" class="cssacc" />
+            <label for="label2">吉井造花店のご案内</label>
+            <div class="accshow">
+                <a class="show" href="about.html#anchor_1">当社のサービス内容</a>
+                <a class="show" href="about.html#anchor_2">会社案内</a>
+            </div>
+            <input type="checkbox" id="label3" class="cssacc" />
+            <label for="label3">お葬式プランと安置室のご案内</label>
+            <div class="accshow">
+                <a class="show" href="plan.html#anchor_1">一般葬プラン</a>
+                <a class="show" href="plan.html#anchor_2">家族葬プラン</a>
+                <a class="show" href="plan.html#anchor_3">安置室プラン</a>
+                <a class="show" href="plan.html_anchor_4">安置室について</a>
+            </div>
+            <input type="checkbox" id="label4" class="cssacc" />
+            <label for="label4">御供物・御供花のご注文</label>
+            <div class="accshow">
+                <a class="show" href="order.html">御供物・御供花のご注文</a>
+                <a class="show" href="order.html#anchor_1">御供花</a>
+                <a class="show" href="order.html#anchor_2">花環</a>
+                <a class="show" href="order.html#anchor_3">盛り籠</a>
+            </div>
+            <a class="cssacc" href="faq.html"><span>よくあるご質問</span></a>
+            <p id="pageTop"><a href="#">▲</a></p>
+        </div>
+    </div>
+        <div class="spHidden tabVisible pcVisible">
         <div class="footerWrapper grid-1 grid-tab-5 grid-pc-5 grid-col-gap20">
             <ul>
-                <li class="footerHeading"><a href="/">トップページ</a></li>
+                <li class="footerHeading"><a href="index.html">トップページ</a></li>
             </ul>
             <ul>
                 <li class="footerHeading">
-                    <a href="about.html">吉井造花店<span class="tabHidden">のご案内</a></span>
+                    <a href="about.html">吉井造花店のご案内</a></span>
                 </li>
                 <li class="footerItemStart"><a href="about.html#anchor_1">当社のサービス内容</a></li>
                 <li class="footerItem"><a href="about.html#anchor_2">会社案内</a></li>
             </ul>
             <ul>
                 <li class="footerHeading">
-                    <a href="plan.html">お葬式プラン<span class="spHidden tabHidden">と安置室のご案内</a></span>
+                    <a href="plan.html">お葬式プランと安置室のご案内</a></span>
                 </li>
                 <li class="footerItemStart"><a href="plan.html#anchor_1">一般葬プラン</a></li>
                 <li class="footerItem"><a href="plan.html#anchor_2">家族葬プラン</a></li>
@@ -275,7 +305,9 @@
             <ul>
                 <li class="footerHeading"> <a href="faq.html">よくあるご質問</a></li>
             </ul>
+            <a href="#" class="topBtn" id="topBtn"><span>トップへ戻る</a>
         </div>
+    </div>
     </footer>
     <div class="copy text-center">©️2020 有限会社 吉井造花店</div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

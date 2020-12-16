@@ -74,7 +74,7 @@ nav {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   transition: all 0.5s;
-  z-index: 3;
+  z-index: 5;
   opacity: 0;
 }
 
@@ -122,7 +122,7 @@ nav .inner ul li a:hover {
   height: 30px;
   transition: all 0.5s;
   cursor: pointer;
-  z-index: 5;
+  z-index: 6;
 }
 
 .toggle_btn span {
@@ -214,7 +214,7 @@ nav .inner ul li a:hover {
   position: fixed;
   top: 0;
   background: #ffffff;
-  z-index: 4;
+  z-index: 6;
   width: 100%;
   box-shadow: 0px 0px 10px #9a9b9a33;
   height: 60px;
@@ -322,7 +322,7 @@ footer {
   letter-spacing: 0.18em;
   background: $bg-main;
   color: #fff;
-  z-index: 2;
+  z-index: 4;
   padding: 30px 0;
   position: relative;
   a {
@@ -364,10 +364,10 @@ footer {
 
 /*SP コールボタン*/
 .sp-call {
-  position: fixed;
+  /* position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 99; */
   background: #256643;
   width: 100%;
   text-align: center;
@@ -375,7 +375,7 @@ footer {
   padding: 20px 0;
   font-size: 14px;
   transition: all 0.5s;
-
+  margin-top: 20%;
   p {
     margin-bottom: 10px;
   }
@@ -513,16 +513,124 @@ footer {
 
 .topBtn {
   display: none;
-  /* position: fixed;
-  right: 0;
-  bottom: 0;
-  background: #256643;
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+#pageTop i {
+  padding-top: 6px;
+}
+
+#pageTop a {
+  display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  font-size: 14px;
+  background: #29704a;
   text-align: center;
-  line-height: 50px; */
+  line-height: 50px;
+  color: #fff;
+  font-size: 10px;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+/*ボックス全体*/
+.accbox {
+  margin: 2em 0;
+  padding: 0;
+  max-width: 100%; /*最大幅*/
+}
+
+.accbox a {
+  color: #091911;
+}
+/*ラベル*/
+.accbox label {
+  display: block;
+  margin: 1.5px 0;
+  padding: 13px 12px;
+  color: #fff;
+  font-weight: bold;
+  background: #256643;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-size: 16px;
+}
+
+.accbox span {
+  display: block;
+  margin: 1.5px 0;
+  padding: 13px 12px;
+  color: #fff;
+  font-weight: bold;
+  background: #256643;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-size: 16px;
+}
+
+/*アイコンを表示*/
+.accbox label:after {
+  content: "▶";
+  font-family: "FontAwesome";
+  padding-left: 8px;
+  font-size: 12px;
+}
+
+// .accbox span:before {
+// }
+
+/*ラベルホバー時*/
+// .accbox label:hover {
+//   background: #f5f7f6;
+//   color: #091911;
+// }
+
+/*チェックは隠す*/
+.accbox input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+  height: auto;
+  background: #f5f7f6;
+  opacity: 1;
+  font-size: 16px;
+  color: #091911;
+}
+
+.accbox .accshow p {
+  margin: 15px 10px;
+}
+
+a.show {
+  display: block;
+  padding: 15px 15px;
+  border-bottom: solid 1px #256643;
+}
+
+/*アイコンを入れ替える*/
+.cssacc:checked + label:after {
+  content: "▼";
 }
 
 /* デザインB（タブレット） */
@@ -848,7 +956,7 @@ footer {
     letter-spacing: 0.18em;
     background: $bg-main;
     color: #fff;
-    z-index: 2;
+    z-index: 4;
     padding: 30px 0;
     position: relative;
     a {
@@ -1233,7 +1341,7 @@ footer {
     letter-spacing: 0.18em;
     background: $bg-main;
     color: #fff;
-    z-index: 2;
+    z-index: 4;
     padding: 30px 0;
     position: relative;
     a {
@@ -1421,40 +1529,5 @@ footer {
         background: rgba(255, 255, 255, 0.1);
       }
     }
-  }
-
-  label {
-    display: block;
-    margin: 0 0 4px 0;
-    padding: 15px;
-    line-height: 1;
-    color: #fff;
-    background: green;
-    cursor: pointer;
-  }
-  input {
-    display: none;
-  }
-  .foot_menu ul {
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    list-style: none;
-  }
-
-  .foot_menu li {
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-
-  #type1:checked ~ #links1 li,
-  #type2:checked ~ #links2 li {
-    height: 54px;
-    opacity: 1;
   }
 }
