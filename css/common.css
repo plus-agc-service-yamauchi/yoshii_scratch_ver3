@@ -1204,6 +1204,7 @@ body {
   }
   .font48 {
     font-size: 2.5vw;
+    letter-spacing: 0.34em;
   }
   .font36 {
     font-size: 1.875vw;
