@@ -30,7 +30,7 @@
 }
 
 .item h3 {
-  text-align: center;
+  text-align: left;
   margin: 0 0 10px 0;
   font-size: 2rem;
   line-height: 1.8rem;
@@ -119,10 +119,10 @@ a.button:hover {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .inner-right h3 {
     text-align: center;
@@ -131,6 +131,7 @@ a.button:hover {
     line-height: 4rem;
     letter-spacing: 1rem;
     font-weight: 800;
+    padding-left: 42px;
   }
   .inner-right p {
     font-size: 1.4rem;
@@ -153,10 +154,10 @@ a.button:hover {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .inner-left-2 h3 {
     text-align: center;
@@ -165,6 +166,7 @@ a.button:hover {
     line-height: 4rem;
     letter-spacing: 1rem;
     font-weight: 800;
+    padding-left: 42px;
   }
   .inner-left-2 p {
     font-size: 1.4rem;
@@ -220,10 +222,10 @@ a.button:hover {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .inner-right h3 {
     text-align: center;
@@ -232,6 +234,7 @@ a.button:hover {
     line-height: 4rem;
     letter-spacing: 1rem;
     font-weight: 800;
+    padding-left: 42px;
   }
   .inner-right p {
     font-size: 1.4rem;
@@ -256,10 +259,10 @@ a.button:hover {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
   .inner-left-2 h3 {
     text-align: center;
@@ -268,6 +271,7 @@ a.button:hover {
     line-height: 4rem;
     letter-spacing: 1rem;
     font-weight: 800;
+    padding-left: 42px;
   }
   .inner-left-2 p {
     font-size: 1.4rem;
