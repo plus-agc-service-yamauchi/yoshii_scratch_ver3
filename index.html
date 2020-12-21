@@ -404,9 +404,18 @@
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
     <script>
-    function isIE() { let userAgent = window.navigator.userAgent.toLowerCase(); return -1 !== userAgent.indexOf("msie") || -1 !== userAgent.indexOf("trident") } document.addEventListener("DOMContentLoaded", (function() { if (isIE()) { let footer = document.getElementById("headbar"),
-                ieDiv = document.createElement("div");
-            ieDiv.classList.add("ie_alert"), ieDiv.innerHTML = '<span>Internet Explorer、ダメ絶対！</span>\n      <p>あなたが使用している <b>Internet Explorer</b> というブラウザはとても古いものです。\n      <br>言ってしまえば、百害あって一利なしの老害です。<br>\n      世界中で、多くのWEB制作者があなたの <b>Internet Explorer</b> のせいで苦悩しています。<br><br>\n      どうか、<b>最新のモダンブラウザ（EdgeやFirefox、Google Chrome）</b>をお使いください。</p>\n      <a href="https://www.google.co.jp/chrome/index.html">Google Chromeをダウンロード</a>', footer.appendChild(ieDiv) } }));
+   $(function() {
+    $(window).scroll(function(ev) {
+        var $window = $(ev.currentTarget),
+            height = $window.height(),
+            scrollTop = $window.scrollTop(),
+            documentHeight = $(document).height();
+        if (documentHeight === height + scrollTop) {
+            // 一番下だよ
+            alert('一番下だよ');
+        }
+    });
+});
     </script>
 </body>
 

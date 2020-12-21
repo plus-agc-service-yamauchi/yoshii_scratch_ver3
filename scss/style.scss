@@ -1294,15 +1294,16 @@ a.show {
     position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 3;
+    /* z-index: 3; */
     background: #256643;
-    width: 13.02%;
+    width: 198px !important;
     text-align: center;
     padding: 20px 0;
     line-height: 28px;
     color: #ffffff;
-    @include fontsize(14, 28);
-    @include tracking(200);
+    line-height: 2;
+    font-size: 1.4rem;
+    letter-spacing: 0.2em;
   }
 
   //   コンテナトップ
