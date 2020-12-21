@@ -1204,6 +1204,7 @@ footer li {
   position: fixed;
   bottom: 40px;
   right: 20px;
+  z-index: 999;
 }
 
 #pageTop i {
@@ -1214,7 +1215,6 @@ footer li {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   background: #29704a;
   text-align: center;
   line-height: 50px;
@@ -1224,7 +1224,7 @@ footer li {
 
 #pageTop a:hover {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /*ボックス全体*/
@@ -1713,6 +1713,29 @@ a.show {
   .topBtn:hover {
     opacity: 0.7;
   }
+  #pageTop {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 999;
+  }
+  #pageTop i {
+    padding-top: 6px;
+  }
+  #pageTop a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #29704a;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 10px;
+  }
+  #pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+  }
 }
 
 /* デザインC(PC) */
@@ -2058,17 +2081,17 @@ a.show {
   }
   #pageTop {
     position: fixed;
-    bottom: 40px;
-    right: 20px;
+    bottom: 95px;
+    right: 0;
+    z-index: 999;
   }
   #pageTop i {
     padding-top: 6px;
   }
   #pageTop a {
     display: inline-block;
-    width: 50px;
+    width: 198px;
     height: 50px;
-    border-radius: 50%;
     background: #29704a;
     text-align: center;
     line-height: 50px;
