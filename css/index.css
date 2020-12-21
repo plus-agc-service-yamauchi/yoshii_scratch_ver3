@@ -228,7 +228,7 @@ a.button:hover {
             align-items: start;
   }
   .inner-right h3 {
-    text-align: center;
+    text-align: left;
     margin: 0 0 10px 0;
     font-size: 2.4rem;
     line-height: 4rem;
@@ -265,7 +265,7 @@ a.button:hover {
             align-items: start;
   }
   .inner-left-2 h3 {
-    text-align: center;
+    text-align: left;
     margin: 0 0 10px 0;
     font-size: 2.4rem;
     line-height: 4rem;
