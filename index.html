@@ -403,20 +403,7 @@
     ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-    <script>
-   $(function() {
-    $(window).scroll(function(ev) {
-        var $window = $(ev.currentTarget),
-            height = $window.height(),
-            scrollTop = $window.scrollTop(),
-            documentHeight = $(document).height();
-        if (documentHeight === height + scrollTop) {
-            // 一番下だよ
-            alert('一番下だよ');
-        }
-    });
-});
-    </script>
+
 </body>
 
 </html>

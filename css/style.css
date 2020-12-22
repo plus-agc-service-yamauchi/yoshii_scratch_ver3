@@ -1947,7 +1947,7 @@ a.show {
     bottom: 0;
     /* z-index: 3; */
     background: #256643;
-    width: 198px !important;
+    width: 13.02% !important;
     text-align: center;
     padding: 20px 0;
     line-height: 28px;
@@ -2084,13 +2084,14 @@ a.show {
     bottom: 95px;
     right: 0;
     z-index: 999;
+    width: 13.02%;
   }
   #pageTop i {
     padding-top: 6px;
   }
   #pageTop a {
     display: inline-block;
-    width: 198px;
+    width: 100% !important;
     height: 50px;
     background: #29704a;
     text-align: center;
