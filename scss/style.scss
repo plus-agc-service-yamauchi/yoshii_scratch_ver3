@@ -414,7 +414,7 @@ footer {
 .modalArea {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 999;
   top: 62px;
   left: 0;
   width: 100%;
@@ -429,14 +429,14 @@ footer {
 
 .modalWrapper {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 90%;
-  height: 100vh;
-  padding: 30px;
+  width: 75%;
+  /* height: 100vh; */
+  padding: 10px 10px;
   background-color: #fff;
 }
 
@@ -498,6 +498,7 @@ footer {
   font-size: 2.8333333333vw;
   letter-spacing: 0.1em;
   text-align: center;
+  width: 86.98%;
 }
 
 .fpoint {
@@ -1452,16 +1453,17 @@ a.show {
     display: inline-block;
     width: 100% !important;
     height: 50px;
-    background: #29704a;
+    background: #fff;
     text-align: center;
     line-height: 50px;
-    color: #fff;
-    font-size: 10px;
+    color: #29704a;
+    font-size: 14px;
   }
 
   #pageTop a:hover {
     text-decoration: none;
     opacity: 0.7;
+    background: #eee;
   }
 
   .copy {

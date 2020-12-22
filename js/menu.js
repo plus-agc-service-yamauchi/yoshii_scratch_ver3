@@ -63,28 +63,30 @@ window.onscroll = function() {
 
 
 // Footer Stop
-// $(function () {
-//   var topBtn = $('.sideFooter'); // ボタンを指定
-
-//   $(window).on("scroll", function () {
-
-//     scrollHeight = $(document).height();
-//     scrollPosition = $(window).height() + $(window).scrollTop();
-//     footHeight = $("footer").innerHeight(); // ここでフッターの高さを取得
-//     if ( scrollHeight - scrollPosition  <= footHeight ) { // フッター付近まで来たら
-//       topBtn.css({
-//         "position":"absolute",
-//         "bottom": footHeight + 0 // フッターの65px上で止まる
-//       });
-//     } else { // それ以外は画面下から20pxの位置に固定
-//       topBtn.css({
-//         "position":"fixed",
-//         "display":"flex",
-//         "bottom":"0",
-//         "flex-direction":"column",
-//       "justify-content":"center",
-//     });
-//     }
-
-//   });
-// });
+$(window).on("scroll", function() {
+  scrollHeight = $(document).height();
+  scrollPosition = $(window).height() + $(window).scrollTop();
+  footerHeight = $(".copy").innerHeight();
+  if ( scrollHeight - scrollPosition  <= footerHeight ) {
+    $(".sideFooter").css({
+      "position":"fixed",
+      "bottom": "0",
+      "background":"#FFF",
+      "color":"#256643",
+      "width": "13.02%",
+    "text-align": "center",
+    "padding": "20px 0",
+    "line-height": "28px",
+    "font-size": "1.4rem",
+    "letter-spacing": "0.2em",
+    "transition": ".5s",
+    });
+  } else {
+    $(".sideFooter").css({
+      "position":"fixed",
+      "bottom": "0px",
+      "background":"#256643",
+      "color":"#FFF"
+    });
+  }
+});
