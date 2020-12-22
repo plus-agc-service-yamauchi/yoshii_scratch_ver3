@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* デザインA（スマートフォン） */
+.enshrine_p {
+  padding: 7% 6% 6% 6%;
+}
+
 span.drawer:before {
   content: "▶";
   margin-right: 5px;
@@ -17,6 +21,9 @@ span.drawer:before {
     color: #996580;
     font-size: 3.717391304vw;
   }
+  .enshrine_p {
+    padding: 7% 6% 4% 6%;
+  }
 }
 
 /* デザインC(PC) */
@@ -30,6 +37,9 @@ span.drawer:before {
   .hover:hover img {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
+  }
+  .enshrine_p {
+    padding: 7% 6% 3% 6%;
   }
 }
 /*# sourceMappingURL=plan.css.map */
