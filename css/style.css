@@ -2128,7 +2128,7 @@ a.show {
     position: fixed;
     bottom: 95px;
     right: 0;
-    z-index: 999;
+    z-index: 3;
     width: 13.02%;
   }
   #pageTop i {
@@ -2271,6 +2271,10 @@ a.show {
   }
   .ie_alert a:hover {
     background: rgba(255, 255, 255, 0.1);
+  }
+  .right {
+    z-index: 2;
+    background: #fff;
   }
 }
 /*# sourceMappingURL=style.css.map */
