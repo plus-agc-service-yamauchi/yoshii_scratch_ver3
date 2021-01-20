@@ -99,7 +99,7 @@ a.button:hover {
     -ms-transform: translateY(-50%);
   }
   #slider .hero_text {
-    max-width: 100%;
+    max-width: 80%;
   }
   .inner-left {
     z-index: 1;
