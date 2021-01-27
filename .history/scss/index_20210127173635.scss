@@ -21,7 +21,7 @@
 }
 
 #slider .hero_text {
-  max-height: 100%;
+  max-width: 100%;
 }
 
 .item {
@@ -95,11 +95,10 @@ a.button:hover {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    display:flex;
   }
 
   #slider .hero_text {
-    max-height: 100%;
+    max-width: 80%;
   }
   .inner-left {
     z-index: 1;
@@ -166,18 +165,17 @@ a.button:hover {
   }
 
   #slider p {
-    width: 250px;
+    width: 280px;
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    display:flex;
   }
 
   #slider .hero_text {
-    max-height: 100%;
+    max-width: 100%;
   }
   .inner-left {
     margin: 0 -100px 0 0;

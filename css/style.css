@@ -55,6 +55,7 @@ span.drawer:before {
 
 #slider p {
   width: 100px;
+  height: 100% !important;
   position: absolute;
   top: 50%;
   left: 2%;
@@ -64,7 +65,7 @@ span.drawer:before {
 }
 
 #slider .hero_text {
-  max-width: 100%;
+  max-height: 100%;
 }
 
 .item {
@@ -141,9 +142,13 @@ a.button:hover {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   #slider .hero_text {
-    max-width: 80%;
+    max-height: 100%;
   }
   .inner-left {
     z-index: 1;
@@ -234,16 +239,20 @@ a.button:hover {
     width: 100%;
   }
   #slider p {
-    width: 280px;
+    width: 250px;
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   #slider .hero_text {
-    max-width: 100%;
+    max-height: 100%;
   }
   .inner-left {
     margin: 0 -100px 0 0;

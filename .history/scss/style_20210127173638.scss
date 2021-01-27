@@ -1441,7 +1441,7 @@ a.show {
     position: fixed;
     bottom: 95px;
     right: 0;
-    z-index: 999;
+    z-index: 3;
     width: 13.02%;
   }
 
@@ -1592,6 +1592,7 @@ a.show {
     }
   }
   .right {
+    z-index: 2;
     background: #fff;
   }
 }
