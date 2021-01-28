@@ -1678,15 +1678,5 @@ a.show {
     z-index: 2;
     background: #fff;
     height: 100vh;
-    .logoWrapper {
-      height: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      p {
-        position: fixed;
-        width: 4%;
-      }
-    }
   }
 }

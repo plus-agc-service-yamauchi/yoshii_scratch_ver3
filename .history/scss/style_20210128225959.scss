@@ -321,7 +321,7 @@ nav .inner ul li a:hover {
   a.link2:hover {
     padding: 10px;
     background: #73244c;
-    border: solid 1px #fff;
+    border: solid 1px #FFF;
     border-radius: 3px;
     display: block;
     margin: 0 auto;
@@ -968,7 +968,7 @@ a.show {
     a.link2:hover {
       padding: 10px;
       background: #73244c;
-      border: solid 1px #fff;
+      border: solid 1px #FFF;
       border-radius: 3px;
       display: block;
       margin: 0 auto;
@@ -1340,21 +1340,10 @@ a.show {
 
   // サイドバーフッター
   .sideFooter {
-    background: #256643;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    line-height: 28px;
-    color: #ffffff;
-    @include fontsize(16, 28);
-    @include tracking(200);
-  }
-  /* .sideFooter {
     position: fixed;
     right: 0;
     bottom: 0;
+    /* z-index: 3; */
     background: #256643;
     width: 13.02% !important;
     text-align: center;
@@ -1364,7 +1353,7 @@ a.show {
     line-height: 2;
     font-size: 1.4rem;
     letter-spacing: 0.2em;
-  } */
+  }
 
   //   コンテナトップ
   .top {
@@ -1420,7 +1409,7 @@ a.show {
     a.link2:hover {
       padding: 10px;
       background: #73244c;
-      border: solid 1px #fff;
+      border: solid 1px #FFF;
       border-radius: 3px;
       display: block;
       margin: 0 auto;
@@ -1677,16 +1666,6 @@ a.show {
   .right {
     z-index: 2;
     background: #fff;
-    height: 100vh;
-    .logoWrapper {
-      height: 90%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      p {
-        position: fixed;
-        width: 4%;
-      }
-    }
+    height:100vh;
   }
 }

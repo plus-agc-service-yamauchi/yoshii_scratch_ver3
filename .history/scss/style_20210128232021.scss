@@ -1685,7 +1685,7 @@ a.show {
       align-items: center;
       p {
         position: fixed;
-        width: 4%;
+        max-width: 4%;
       }
     }
   }
