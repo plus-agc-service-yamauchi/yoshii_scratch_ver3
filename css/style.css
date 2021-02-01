@@ -2556,6 +2556,7 @@ a.show {
     height: 100vh;
   }
   .right .logoWrapper {
+    z-index: 2;
     height: 85%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2575,6 +2576,7 @@ a.show {
     width: 4%;
   }
   .right .logoWrapper img {
+    width: 130%;
     display: block;
   }
 }

@@ -661,13 +661,13 @@ a.show {
 
 // サイドバーフッター
 .sideFooter {
-  display: none;
+  display:none;
 }
 
 .right {
   .logoWrapper {
     img {
-      display: none;
+      display:none;
     }
   }
 }
@@ -902,8 +902,9 @@ a.show {
 
   // サイドバーフッター
   .sideFooter {
-    display: none !important;
+    display:none !important;
   }
+
 
   //   コンテナトップ
   .top {
@@ -1342,7 +1343,7 @@ a.show {
 
   // サイドバーフッター
   .sideFooter {
-    display: block;
+    display:block;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1670,7 +1671,7 @@ a.show {
     background: #fff;
     height: 100vh;
     .logoWrapper {
-      z-index: 2;
+      z-index:2;
       height: 85%;
       display: flex;
       justify-content: center;
@@ -1679,9 +1680,8 @@ a.show {
         position: fixed;
         width: 4%;
       }
-      img {
-        width: 130%;
-        display: block;
+      img{
+        display:block;
       }
     }
   }
