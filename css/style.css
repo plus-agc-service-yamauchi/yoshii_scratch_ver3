@@ -703,6 +703,11 @@ td.tdr {
   color: #091911;
 }
 
+.basicinfo {
+  background: #fff;
+  padding: 20px;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .card {
@@ -728,9 +733,9 @@ td.tdr {
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
     background-size: cover;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 10px 0;
     font-size: 2.3vw;
-    line-height: 4.8rem;
+    line-height: 2.4rem;
     letter-spacing: 1.8;
     display: -webkit-box;
     display: -webkit-flex;
@@ -774,8 +779,13 @@ td.tdr {
   }
   .bg-flower_text_title_bottom {
     text-indent: 30px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
+}
+
+.basicinfo {
+  background: #fff;
+  padding: 20px;
 }
 
 /* デザインC(PC) */
@@ -851,6 +861,10 @@ td.tdr {
   .bg-flower_text_title_bottom {
     text-indent: 30px;
     font-size: 1.6rem;
+  }
+  .basicinfo {
+    background: #fff;
+    padding: 20px;
   }
 }
 

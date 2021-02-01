@@ -115,10 +115,6 @@ td.tdr {
   padding: 20px 0;
   color: #091911;
 }
-.basicinfo {
-  background: #fff;
-  padding: 20px;
-}
 
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -170,10 +166,6 @@ td.tdr {
     text-indent: 30px;
     font-size: 1.2rem;
   }
-}
-.basicinfo {
-  background: #fff;
-  padding: 20px;
 }
 
 /* デザインC(PC) */
@@ -227,8 +219,7 @@ td.tdr {
     text-indent: 30px;
     font-size: 1.6rem;
   }
-  .basicinfo {
-    background: #fff;
-    padding: 20px;
+  .info{
+
   }
 }
