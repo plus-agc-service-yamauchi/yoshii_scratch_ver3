@@ -32,6 +32,48 @@
   line-height: 2.3rem;
 }
 
+.bg-flower_text_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #996580;
+  background: rgba(255, 254, 245, 0.8);
+  font-size: 3.6rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.bg-flower_text_title span {
+  font-size: 20px;
+}
+
+.bg-flower_text_title_middle_one {
+  text-indent: 30px;
+  margin-bottom: 10px;
+}
+
+.bg-flower_text_title_middle_two {
+  text-indent: 30px;
+  margin-bottom: 20px;
+}
+
+.bg-flower_text_title_bottom {
+  text-indent: 30px;
+  font-size: 1.6rem;
+}
+
+.bg-flower_sp_img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
 .sp_fax {
   background: url(../img/call_bg.jpg) no-repeat;
   background-size: cover;
@@ -143,6 +185,37 @@ td.tdr {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .bg-flower_text_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #996580;
+    background: rgba(255, 254, 245, 0.8);
+    font-size: 2.6rem;
+    padding: 15px 30px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+  .bg-flower_text_title span {
+    font-size: 16px;
+  }
+  .bg-flower_text_title_middle_one {
+    text-indent: 30px;
+    margin-bottom: 10px;
+  }
+  .bg-flower_text_title_middle_two {
+    text-indent: 30px;
+    margin-bottom: 20px;
+  }
+  .bg-flower_text_title_bottom {
+    text-indent: 30px;
+    font-size: 1.6rem;
+  }
 }
 
 /* デザインC(PC) */
@@ -199,7 +272,7 @@ td.tdr {
             align-items: center;
     color: #996580;
     background: rgba(255, 254, 245, 0.8);
-    font-size: 3.6rem;
+    font-size: 3.6rem !important;
     padding: 15px 30px;
     border-radius: 3px;
     margin-bottom: 40px;

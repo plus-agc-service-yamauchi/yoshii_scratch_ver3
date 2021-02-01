@@ -592,6 +592,48 @@ hr {
   line-height: 2.3rem;
 }
 
+.bg-flower_text_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #996580;
+  background: rgba(255, 254, 245, 0.8);
+  font-size: 3.6rem;
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.bg-flower_text_title span {
+  font-size: 20px;
+}
+
+.bg-flower_text_title_middle_one {
+  text-indent: 30px;
+  margin-bottom: 10px;
+}
+
+.bg-flower_text_title_middle_two {
+  text-indent: 30px;
+  margin-bottom: 20px;
+}
+
+.bg-flower_text_title_bottom {
+  text-indent: 30px;
+  font-size: 1.6rem;
+}
+
+.bg-flower_sp_img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
 .sp_fax {
   background: url(../img/call_bg.jpg) no-repeat;
   background-size: cover;
@@ -703,6 +745,37 @@ td.tdr {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .bg-flower_text_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #996580;
+    background: rgba(255, 254, 245, 0.8);
+    font-size: 2.6rem;
+    padding: 15px 30px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+  }
+  .bg-flower_text_title span {
+    font-size: 16px;
+  }
+  .bg-flower_text_title_middle_one {
+    text-indent: 30px;
+    margin-bottom: 10px;
+  }
+  .bg-flower_text_title_middle_two {
+    text-indent: 30px;
+    margin-bottom: 20px;
+  }
+  .bg-flower_text_title_bottom {
+    text-indent: 30px;
+    font-size: 1.6rem;
+  }
 }
 
 /* デザインC(PC) */
@@ -759,7 +832,7 @@ td.tdr {
             align-items: center;
     color: #996580;
     background: rgba(255, 254, 245, 0.8);
-    font-size: 3.6rem;
+    font-size: 3.6rem !important;
     padding: 15px 30px;
     border-radius: 3px;
     margin-bottom: 40px;
@@ -1428,6 +1501,14 @@ a.show {
   content: "▼";
 }
 
+.sideFooter {
+  display: none;
+}
+
+.right .logoWrapper img {
+  display: none;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
@@ -1640,19 +1721,7 @@ a.show {
     padding-right: 40px;
   }
   .sideFooter {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    background: #256643;
-    width: 13.02%;
-    text-align: center;
-    padding: 20px 0;
-    line-height: 28px;
-    color: #ffffff;
-    line-height: 1.75;
-    font-size: 1.6rem;
-    letter-spacing: 0.2em;
+    display: none !important;
   }
   .top {
     line-height: 2;
@@ -2083,19 +2152,7 @@ a.show {
     cursor: pointer;
   }
   .sideFooter {
-    background: #256643;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    line-height: 28px;
-    color: #ffffff;
-    line-height: 1.75;
-    font-size: 1.6rem;
-    letter-spacing: 0.2em;
-  }
-  /* .sideFooter {
+    display: block;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -2108,7 +2165,7 @@ a.show {
     line-height: 2;
     font-size: 1.4rem;
     letter-spacing: 0.2em;
-  } */
+  }
   .top {
     line-height: 2;
     font-size: 1.25vw;
@@ -2430,6 +2487,9 @@ a.show {
   .right .logoWrapper p {
     position: fixed;
     width: 4%;
+  }
+  .right .logoWrapper img {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
