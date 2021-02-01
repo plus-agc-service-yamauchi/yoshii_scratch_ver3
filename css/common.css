@@ -1270,6 +1270,12 @@ body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .grid-pc-2-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
   .grid-pc-3 {
     display: -ms-grid;
     display: grid;

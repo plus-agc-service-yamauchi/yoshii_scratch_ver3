@@ -584,6 +584,8 @@ hr {
 
 .bg-flower {
   background: url(../img/bg-flower.jpg) no-repeat;
+  background-color: rgba(255, 254, 245, 0.4);
+  background-blend-mode: lighten;
   background-size: cover;
   background-position: left center;
   padding: 50px 10px;
@@ -686,7 +688,7 @@ tr {
 }
 
 td.tdl {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4rem;
   letter-spacing: 1.8;
   width: 20%;
@@ -696,16 +698,25 @@ td.tdl {
 
 td.tdr {
   width: 80%;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4rem;
   letter-spacing: 1.8;
   padding: 20px 0;
   color: #091911;
 }
 
-.basicinfo {
+td.tdr p {
+  font-size: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+div.tablebg {
   background: #fff;
   padding: 20px;
+  border-radius: 3px;
 }
 
 /* デザインB（タブレット） */
@@ -732,6 +743,8 @@ td.tdr {
   }
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
+    background-color: rgba(255, 254, 245, 0.5);
+    background-blend-mode: lighten;
     background-size: cover;
     padding: 20px 0 10px 0;
     font-size: 2.3vw;
@@ -760,7 +773,7 @@ td.tdr {
         -ms-flex-align: center;
             align-items: center;
     color: #996580;
-    background: rgba(255, 254, 245, 0.8);
+    background: rgba(255, 254, 245, 0.9);
     font-size: 2.6rem;
     padding: 15px 30px;
     border-radius: 3px;
@@ -783,9 +796,37 @@ td.tdr {
   }
 }
 
-.basicinfo {
+td.tdl {
+  font-size: 14px;
+  line-height: 2.4rem;
+  letter-spacing: 1.8px;
+  width: 20%;
+  padding: 20px 20px;
+  color: #091911;
+}
+
+td.tdr {
+  width: 80%;
+  font-size: 14px;
+  line-height: 2.4rem;
+  letter-spacing: 1.8px;
+  padding: 20px 20px;
+  color: #091911;
+}
+
+td.tdr p {
+  font-size: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+div.tablebg {
   background: #fff;
   padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
 }
 
 /* デザインC(PC) */
@@ -812,6 +853,7 @@ td.tdr {
   }
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
+    background-color: rgba(255, 254, 245, 0);
     background-size: cover;
     padding: 50px 50px 50px 0;
     font-size: 1.041666667vw;
@@ -862,9 +904,39 @@ td.tdr {
     text-indent: 30px;
     font-size: 1.6rem;
   }
-  .basicinfo {
+  table {
+    width: 100%;
+    height: 100%;
+  }
+  div.tablebg {
     background: #fff;
-    padding: 20px;
+    padding: 40px;
+    border-radius: 3px;
+  }
+  td.tdl {
+    font-size: 20px;
+    line-height: 2.4rem;
+    letter-spacing: 1.8px;
+    width: 20%;
+    padding: 20px 20px;
+    color: #091911;
+  }
+  td.tdr {
+    width: 80%;
+    font-size: 20px;
+    line-height: 2.4rem;
+    letter-spacing: 1.8px;
+    padding: 20px 20px;
+    color: #091911;
+  }
+  td.tdr p {
+    font-size: 16px;
+  }
+  .grid-pc-2-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 830px 1fr !important;
+        grid-template-columns: 830px 1fr !important;
   }
 }
 
