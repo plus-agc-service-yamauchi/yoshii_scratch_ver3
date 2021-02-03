@@ -1,15 +1,15 @@
-@charset "UTF-8";
 /* デザインA（スマートフォン） */
 .faq_content {
   background: #ffffff;
   padding: 10px 10px;
+
   margin-bottom: 40px;
 }
 
 hr {
   border-width: 1px;
   border-color: #256643;
-  margin: 10px 0;
+  margin:20px 0;
 }
 
 .que {
@@ -20,7 +20,7 @@ hr {
 }
 
 .que_text {
-  font-size: 2.8vw;
+  font-size: 3vw;
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -49,7 +49,7 @@ hr {
   background-size: contain;
   height: 30px;
   width: 30px;
-  padding-right: 25px;
+  padding-right: 20px;
   vertical-align: top;
 }
 
@@ -61,22 +61,13 @@ hr {
   background-size: contain;
   height: 30px;
   width: 30px;
-  padding-right: 25px;
-  -webkit-align-self: start !important;
-      -ms-flex-item-align: start !important;
-              -ms-grid-row-align: start !important;
-          align-self: start !important;
+  padding-right: 20px;
+  align-self: start !important;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 /* デザインB（タブレット） */
@@ -86,35 +77,41 @@ hr {
     padding: 20px 30px;
     margin-bottom: 40px;
   }
+
   hr {
     border-width: 1px;
     border-color: #256643;
-    margin: 20px 0;
+    margin:20px 0;
   }
+
   .que {
     font-size: 2vw;
     font-weight: 800;
     line-height: 1.93;
     letter-spacing: 0.1em;
   }
+
   .que_text {
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-weight: 800;
     line-height: 2;
     letter-spacing: 0.1em;
   }
+
   .ans {
     font-size: 2vw;
     font-weight: 800;
     line-height: 2;
     letter-spacing: 0.1em;
   }
+
   .ans_text {
     line-height: 1.3;
     font-size: 1.953125vw;
     letter-spacing: 0.18em;
     vertical-align: middle;
   }
+
   .que::before {
     display: inline;
     content: "";
@@ -123,9 +120,10 @@ hr {
     background-size: contain;
     height: 30px;
     width: 30px;
-    margin-right: 20px;
+    padding-right: 30px;
     vertical-align: top;
   }
+
   .ans::before {
     display: inline;
     content: "";
@@ -134,21 +132,13 @@ hr {
     background-size: contain;
     height: 30px;
     width: 30px;
-    margin-right: 20px;
-    -webkit-align-self: start !important;
-        -ms-flex-item-align: start !important;
-                -ms-grid-row-align: start !important;
-            align-self: start !important;
+    padding-right: 30px;
+    align-self: start !important;
   }
+
   .flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 
@@ -159,34 +149,40 @@ hr {
     padding: 20px 50px;
     margin-bottom: 40px;
   }
+
   hr {
     border-width: 1px;
     border-color: #256643;
   }
+
   .que {
     font-size: 1.25vw;
     font-weight: 800;
     line-height: 1.93;
     letter-spacing: 0.1em;
   }
+
   .que_text {
     font-size: 1.25vw;
     font-weight: 800;
     line-height: 2;
     letter-spacing: 0.1em;
   }
+
   .ans {
     font-size: 1.25vw;
     font-weight: 800;
     line-height: 2;
     letter-spacing: 0.1em;
   }
+
   .ans_text {
     line-height: 1.3;
     font-size: 1.041666667vw;
     letter-spacing: 0.18em;
     vertical-align: middle;
   }
+
   .que::before {
     display: inline;
     content: "";
@@ -197,6 +193,7 @@ hr {
     width: 30px;
     margin-right: 20px;
   }
+
   .ans::before {
     display: inline;
     content: "";
@@ -205,17 +202,11 @@ hr {
     background-size: contain;
     height: 30px;
     width: 30px;
-    margin-right: 20px;
+    padding-right: 30px;
   }
+
   .flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
-/*# sourceMappingURL=faq.css.map */
