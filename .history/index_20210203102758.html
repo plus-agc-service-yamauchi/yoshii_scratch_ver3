@@ -396,7 +396,7 @@
     <script src="js/returnTop.min.js"></script>
     <script>
         $(window).load(function() {
-            $('#slider').fadeIn(100);
+            $('#slider').fadeIn(1000);
         });
     </script>
     <script>
@@ -405,6 +405,18 @@
     spinner.classList.add('loaded');
 }
     </script>
+    $(function(){
+        // 1回目のアクセス
+        if($.cookie("access") == undefined) {
+          //最初にアクセスしたときにはここに書いたアニメーションのJSが動く
+          $.cookie("access","onece");
+          $("#loading").css("display","block")
+        // 2回目以降は動かないようにするけど最初は動かす
+        } else {
+      $("#loading").css("display","none")
+          // 2回目以降は動かないようにする
+        }
+      });
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
     window.ga = function() { ga.q.push(arguments) };

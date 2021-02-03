@@ -1,11 +1,13 @@
 @charset "UTF-8";
 /* デザインA（スマートフォン） */
 .enshrine_p {
-  padding: 7% 6% 6% 6%; }
+  padding: 7% 6% 6% 6%;
+}
 
 span.drawer:before {
   content: "▶";
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -17,21 +19,27 @@ span.drawer:before {
     cursor: pointer;
     width: 100%;
     color: #996580;
-    font-size: 3.717391304vw; }
-
+    font-size: 3.717391304vw;
+  }
   .enshrine_p {
-    padding: 7% 6% 4% 6%; } }
+    padding: 7% 6% 4% 6%;
+  }
+}
+
 /* デザインC(PC) */
 @media screen and (min-width: 1025px) {
   .hover img {
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-
+    transition: 0.3s ease-in-out;
+  }
   .hover:hover img {
     -webkit-transform: scale(1.05);
-    transform: scale(1.05); }
-
+    transform: scale(1.05);
+  }
   .enshrine_p {
-    padding: 7% 6% 3% 6%; } }
+    padding: 7% 6% 3% 6%;
+  }
+}
+/*# sourceMappingURL=plan.css.map */

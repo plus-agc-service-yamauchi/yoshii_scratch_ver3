@@ -20,9 +20,6 @@
 </head>
 
 <body>
-    <div id="loading">
-        <div class="loader"></div>
-    </div>
     <header>
         <!-- SP ヘッダーバー -->
         <div id="headbar">
@@ -396,14 +393,8 @@
     <script src="js/returnTop.min.js"></script>
     <script>
         $(window).load(function() {
-            $('#slider').fadeIn(100);
+            $('#slider').fadeIn(10000); //ここのIDはさっきのと同じ
         });
-    </script>
-    <script>
-        window.onload = function () {
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
-}
     </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
