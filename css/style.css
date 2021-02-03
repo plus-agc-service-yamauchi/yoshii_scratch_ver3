@@ -2570,6 +2570,7 @@ a.show {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+    background: #fff !important;
   }
   .right .logoWrapper p {
     position: fixed;

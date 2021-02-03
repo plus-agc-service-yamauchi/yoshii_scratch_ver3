@@ -1676,13 +1676,12 @@ a.show {
       justify-content: center;
       align-items: center;
       background: #fff !important;
-      p {
-        position: fixed;
-        width: 4%;
-      }
+      position:fixed;
+
       img {
         width: 130%;
         display: block;
+        position:fixed;
       }
     }
   }

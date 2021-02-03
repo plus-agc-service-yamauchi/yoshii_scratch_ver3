@@ -1676,6 +1676,7 @@ a.show {
       justify-content: center;
       align-items: center;
       background: #fff !important;
+      position:fixed;
       p {
         position: fixed;
         width: 4%;
@@ -1683,6 +1684,7 @@ a.show {
       img {
         width: 130%;
         display: block;
+        position:fixed;
       }
     }
   }

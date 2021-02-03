@@ -1668,7 +1668,7 @@ a.show {
   .right {
     z-index: 2;
     background: #fff;
-    height: 100vh;
+    padding: 100vh;
     .logoWrapper {
       z-index: 2;
       height: 85%;
@@ -1685,5 +1685,8 @@ a.show {
         display: block;
       }
     }
+  }
+  .left {
+    position: relative !important;
   }
 }

@@ -1669,13 +1669,14 @@ a.show {
     z-index: 2;
     background: #fff;
     height: 100vh;
+    display:block;
     .logoWrapper {
       z-index: 2;
       height: 85%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #fff !important;
+      background:#FFF !important;
       p {
         position: fixed;
         width: 4%;
