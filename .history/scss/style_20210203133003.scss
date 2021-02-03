@@ -1161,7 +1161,7 @@ a.show {
     font-size: 0.8333333333vw;
     letter-spacing: 0.1em;
     text-align: center;
-    width: 100%;
+    width:100%;
   }
 
   /*SP コールボタン*/
@@ -1860,22 +1860,17 @@ a.show {
     background: #fff;
     height: 100vh;
     .logoWrapper {
-      z-index: 2;
-      width: 13.02%;
+      z-index:2;
+      width:13.02%;
       height: 89%;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #fff;
-      position: fixed;
-      a {
-        display: block;
-        width: 100%;
-      }
+      background:#FFF;
       img {
-        width: 35%;
+        width: 130%;
         display: block;
-        margin: 0 auto;
+        position:fixed;
       }
     }
   }

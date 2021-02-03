@@ -1867,13 +1867,13 @@ a.show {
       justify-content: center;
       align-items: center;
       background: #fff;
-      position: fixed;
+      position: sticky;
       a {
         display: block;
         width: 100%;
       }
       img {
-        width: 35%;
+        width: 40%;
         display: block;
         margin: 0 auto;
       }

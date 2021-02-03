@@ -1861,19 +1861,19 @@ a.show {
     height: 100vh;
     .logoWrapper {
       z-index: 2;
-      width: 13.02%;
+      width: 100%;
       height: 89%;
       display: flex;
       justify-content: center;
       align-items: center;
       background: #fff;
-      position: fixed;
+      position: sticky;
       a {
         display: block;
         width: 100%;
       }
       img {
-        width: 35%;
+        width: 40%;
         display: block;
         margin: 0 auto;
       }

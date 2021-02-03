@@ -513,7 +513,7 @@ footer li {
   font-size: 2.8333333333vw;
   letter-spacing: 0.1em;
   text-align: center;
-  width: 86.98%;
+  width: 100%;
 }
 
 .fpoint {
@@ -754,6 +754,40 @@ a.show {
     -webkit-box-shadow: 0 2.5em 0 0;
             box-shadow: 0 2.5em 0 0;
   }
+}
+
+.sp_fax {
+  background: url(../img/call_bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: left center;
+  padding: 50px 10px;
+  text-align: left;
+  font-size: 3.717391304vw;
+  line-height: 2.3rem;
+}
+
+.sp_fax .btn {
+  background: #eaf0ed;
+  border: solid 1px #518569;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.5rem;
+}
+
+.sp_fax .btn a:hover {
+  background: #518569;
+  border: solid 1px #eaf0ed;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 1.8rem;
 }
 
 /* デザインB（タブレット） */
@@ -1811,7 +1845,8 @@ a.show {
   }
   .right .logoWrapper {
     z-index: 2;
-    height: 85%;
+    width: 13.02%;
+    height: 89%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1824,15 +1859,17 @@ a.show {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #fff !important;
-  }
-  .right .logoWrapper p {
+    background: #fff;
     position: fixed;
-    width: 4%;
+  }
+  .right .logoWrapper a {
+    display: block;
+    width: 100%;
   }
   .right .logoWrapper img {
-    width: 130%;
+    width: 35%;
     display: block;
+    margin: 0 auto;
   }
   #slider {
     display: none;
