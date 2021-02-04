@@ -78,10 +78,10 @@ $(window).on("scroll", function() {
       "width": "13.02%",
     "text-align": "center",
     "padding": "20px 0",
-    "font-size": "2.8rem",
+    "line-height": "28px",
+    "font-size": "1.4rem",
+    "letter-spacing": "0.2em",
     "transition": ".5s",
-    "display": "flex",
-    "flex-direction": "column",
     });
   } else {
     $(".sideFooter").css({
