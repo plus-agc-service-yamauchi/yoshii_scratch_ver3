@@ -1,29 +1,50 @@
-@charset "UTF-8";
-.animate__animated.animate__fadeInLeft {
-  --animate-duration: 2s;
+@import "option.scss";
+
+$demibold: 600;
+$extrabold: 800;
+$text-main: #256643;
+$bg-main: #256643;
+$general: #996580;
+$home: #a67d65;
+$enshrine: #65997d;
+$bg-info: #e8efec;
+$bg-sub: #f7f9f8;
+$bg-enshrine: #dfe6da;
+$font60: 60px;
+$font48: 48px;
+$font24: 24px;
+$font20: 20px;
+$font16: 16px;
+
+// 行間のmixin
+@mixin fontsize($fontsize, $lin) {
+  //$fontsizeの数値の単位はpx
+  line-height: $lin / $fontsize;
+  font-size: #{$fontsize / 10}rem;
 }
 
-.animate__animated.animate__fadeInRight {
-  --animate-duration: 2s;
+// トラッキングのmixin
+@mixin tracking($tracking) {
+  letter-spacing: ($tracking / 1000) + em;
 }
 
 /* デザインA（スマートフォン） */
+
 .mustHead {
   position: relative;
   margin: 60px 0 0 0;
-}
-
-.mustHead h1 {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  font-size: 6.25vw;
-  text-shadow: 3px 3px 20px #fdfffd;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  font-weight: 800;
-  letter-spacing: 0.2rem;
+  h1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 6.25vw;
+    text-shadow: 3px 3px 20px rgba(253, 255, 253, 1);
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+  }
 }
 
 .sidebar {
@@ -48,7 +69,6 @@ nav {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 5;
   opacity: 0;
@@ -81,8 +101,7 @@ nav .inner ul li a {
   font-size: 4.830917874vw;
   padding: 1em;
   text-decoration: none;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 nav .inner ul li a:hover {
@@ -97,7 +116,6 @@ nav .inner ul li a:hover {
   right: 15px;
   width: 30px;
   height: 30px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
   z-index: 6;
@@ -111,7 +129,6 @@ nav .inner ul li a:hover {
   height: 2px;
   background-color: #333;
   border-radius: 4px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -146,6 +163,7 @@ nav .inner ul li a:hover {
 }
 
 /*SP ドロワー ドロップダウン*/
+
 .menu_list .nav_item {
   position: relative;
 }
@@ -171,7 +189,6 @@ nav .inner ul li a:hover {
 /*SP ドロワー マスク*/
 #mask {
   display: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -195,25 +212,14 @@ nav .inner ul li a:hover {
   background: #ffffff;
   z-index: 6;
   width: 100%;
-  -webkit-box-shadow: 0px 0px 10px #9a9b9a33;
-          box-shadow: 0px 0px 10px #9a9b9a33;
+  box-shadow: 0px 0px 10px #9a9b9a33;
   height: 60px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#headbar span {
-  font-size: 70%;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 70%;
+  }
 }
 
 #headbar h1 {
@@ -221,6 +227,17 @@ nav .inner ul li a:hover {
   font-size: 100%;
   text-align: center;
 }
+
+// #headbar h1::before {
+//   display: inline;
+//   content: "";
+//   background-image: url(../img/logo_sp.svg);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   height: 100px;
+//   width: 100px;
+//   padding-right: 20px;
+// }
 
 #headbar a {
   font-size: 5vw;
@@ -240,137 +257,128 @@ nav .inner ul li a:hover {
   padding-right: 30px;
 }
 
+//   コンテナトップ
 .top {
   line-height: 2;
   font-size: 4.260869565vw;
   letter-spacing: 0.18em;
   text-align: center;
   margin: 30px 0;
-}
 
-.top p {
-  font-size: 85%;
+  p {
+    font-size: 85%;
+  }
 }
 
 .info {
-  background: #e8efec;
+  background: $bg-info;
 }
 
 .ir {
   width: 100%;
   margin-bottom: 30px;
-}
-
-.ir a.link {
-  padding: 10px;
-  background: #ffffff;
-  border: solid 1px #006840;
-  border-radius: 3px;
-  display: block;
-  width: 100%;
-  font-size: 10px;
-  text-align: center;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-}
-
-.ir a.link:hover {
-  padding: 10px;
-  background: #006840;
-  border: solid 1px #006840;
-  border-radius: 3px;
-  display: block;
-  margin: 0 auto;
-  font-size: 10px;
-  text-align: center;
-  color: #fff;
-  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-}
-
-.ir a.link2 {
-  padding: 10px;
-  background: #ffffff;
-  border: solid 1px #73244c;
-  border-radius: 3px;
-  display: inline-block;
-  width: 70%;
-  font-size: 10px;
-  text-align: center;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-}
-
-.ir a.link2:hover {
-  padding: 10px;
-  background: #73244c;
-  border: solid 1px #fff;
-  border-radius: 3px;
-  display: inline-block;
-  font-size: 1px;
-  text-align: center;
-  color: #fff;
-  -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-          box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  a.link {
+    padding: 10px;
+    background: #ffffff;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
+  a.link:hover {
+    padding: 10px;
+    background: #006840;
+    border: solid 1px #006840;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
+  a.link2 {
+    padding: 10px;
+    background: #ffffff;
+    border: solid 1px #73244c;
+    border-radius: 3px;
+    display: inline-block;
+    width: 70%;
+    font-size: 10px;
+    text-align: center;
+    transition: 0.2s;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
+  a.link2:hover {
+    padding: 10px;
+    background: #73244c;
+    border: solid 1px #fff;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+  }
 }
 
 .button {
   background: #ffffff;
-  background: white;
+  background: rgba(255, 255, 255, 1);
   border: solid 1px #256643;
-  -webkit-box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
-          box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
+  box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
   border-radius: 5px;
 }
 
 footer {
+  //   フッター全体設定
   line-height: 1.3125;
   font-size: 1.171875vw;
   letter-spacing: 0.18em;
-  background: #256643;
+  background: $bg-main;
   color: #fff;
   z-index: 4;
   padding: 30px 0;
   position: relative;
-}
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
+  // フッタークラス
+  .footerHeading {
+    line-height: 1.10526;
+    font-size: 4vw;
+    letter-spacing: 0.18em;
+    margin-bottom: 10px;
+    display: block;
+  }
 
-footer .footerHeading {
-  line-height: 1.10526;
-  font-size: 4vw;
-  letter-spacing: 0.18em;
-  margin-bottom: 10px;
-  display: block;
-}
+  .footerItem {
+    line-height: 2;
+    font-size: 3.3vw;
+    letter-spacing: 0.18em;
+  }
 
-footer .footerItem {
-  line-height: 2;
-  font-size: 3.3vw;
-  letter-spacing: 0.18em;
-}
+  .footerItemStart {
+    line-height: 2;
+    font-size: 3.3vw;
+    letter-spacing: 0.18em;
+  }
 
-footer .footerItemStart {
-  line-height: 2;
-  font-size: 3.3vw;
-  letter-spacing: 0.18em;
-}
+  .footerWrapper {
+    width: 86.98%;
+    margin: 0 auto;
+  }
 
-footer .footerWrapper {
-  width: 86.98%;
-  margin: 0 auto;
-}
-
-footer li {
-  display: inline-block;
-  margin: 0 15px 15px 0;
+  li {
+    display: inline-block;
+    margin: 0 15px 15px 0;
+  }
 }
 
 /*SP コールボタン*/
@@ -385,13 +393,11 @@ footer li {
   color: #ffffff;
   padding: 20px 0;
   font-size: 14px;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   margin-top: 20%;
-}
-
-.sp-call p {
-  margin-bottom: 10px;
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 .sp-call a {
@@ -403,7 +409,6 @@ footer li {
 }
 
 .sp-call a::after {
-  position: -webkit-sticky;
   position: sticky;
   bottom: -8px;
   left: 0;
@@ -413,7 +418,6 @@ footer li {
   background: #eeeeee;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -456,10 +460,10 @@ footer li {
 
 .modalContents {
   font-size: 3vw;
-}
 
-.modalContents li {
-  margin: 0 0 20px 0;
+  li {
+    margin: 0 0 20px 0;
+  }
 }
 
 .closeModal {
@@ -557,19 +561,16 @@ footer li {
   text-decoration: none;
   opacity: 0.9;
 }
-
 /*ボックス全体*/
 .accbox {
   margin: 2em 0;
   padding: 0;
-  max-width: 100%;
-  /*最大幅*/
+  max-width: 100%; /*最大幅*/
 }
 
 .accbox a {
   color: #091911;
 }
-
 /*ラベル*/
 .accbox label {
   display: block;
@@ -605,7 +606,15 @@ footer li {
   font-size: 12px;
 }
 
+// .accbox span:before {
+// }
+
 /*ラベルホバー時*/
+// .accbox label:hover {
+//   background: #f5f7f6;
+//   color: #091911;
+// }
+
 /*チェックは隠す*/
 .accbox input {
   display: none;
@@ -617,7 +626,6 @@ footer li {
   padding: 0;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
@@ -645,113 +653,97 @@ a.show {
   content: "▼";
 }
 
+// サイドバーフッター
 .sideFooter {
   display: none !important;
 }
 
-.right .logoWrapper img {
-  display: none;
+.right {
+  .logoWrapper {
+    img {
+      display: none;
+    }
+  }
 }
-
 #slider {
   display: none;
 }
-
 #loading {
   /* 画面いっぱいになる箇所 */
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  -webkit-transition: all 1s;
   transition: all 1s;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
+
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   /* 中のローディングアニメ */
-}
-
-#loading.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
-
-#loading .loader,
-#loading .loader:before,
-#loading .loader:after {
-  border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation: load7 1.8s infinite ease-in-out;
-  animation: load7 1.8s infinite ease-in-out;
-}
-
-#loading .loader {
-  color: #bbb;
-  font-size: 5px;
-  margin: 80px auto;
-  position: relative;
-  text-indent: -9999em;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-
-#loading .loader:before,
-#loading .loader:after {
-  content: "";
-  position: absolute;
-  top: 0;
-}
-
-#loading .loader:before {
-  left: -3.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-
-#loading .loader:after {
-  left: 3.5em;
-}
-
-@-webkit-keyframes load7 {
-  0%,
-  80%,
-  100% {
-    -webkit-box-shadow: 0 2.5em 0 -1.3em;
-            box-shadow: 0 2.5em 0 -1.3em;
+  .loader,
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: load7 1.8s infinite ease-in-out;
+    animation: load7 1.8s infinite ease-in-out;
   }
-  40% {
-    -webkit-box-shadow: 0 2.5em 0 0;
-            box-shadow: 0 2.5em 0 0;
+  .loader {
+    color: #bbb;
+    font-size: 5px;
+    margin: 80px auto;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
   }
-}
-
-@keyframes load7 {
-  0%,
-  80%,
-  100% {
-    -webkit-box-shadow: 0 2.5em 0 -1.3em;
-            box-shadow: 0 2.5em 0 -1.3em;
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: 0;
   }
-  40% {
-    -webkit-box-shadow: 0 2.5em 0 0;
-            box-shadow: 0 2.5em 0 0;
+  .loader:before {
+    left: -3.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .loader:after {
+    left: 3.5em;
+  }
+  @-webkit-keyframes load7 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+      box-shadow: 0 2.5em 0 0;
+    }
+  }
+  @keyframes load7 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 2.5em 0 -1.3em;
+    }
+    40% {
+      box-shadow: 0 2.5em 0 0;
+    }
   }
 }
 
@@ -763,30 +755,28 @@ a.show {
   text-align: left;
   font-size: 3.717391304vw;
   line-height: 2.3rem;
-}
-
-.sp_fax .btn {
-  background: #eaf0ed;
-  border: solid 1px #518569;
-  border-radius: 10px;
-  padding: 10px;
-  display: block;
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 0.5rem;
-}
-
-.sp_fax .btn a:hover {
-  background: #518569;
-  border: solid 1px #eaf0ed;
-  border-radius: 5px;
-  padding: 10px;
-  display: block;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  letter-spacing: 1.8rem;
+  .btn {
+    background: #eaf0ed;
+    border: solid 1px #518569;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0.5rem;
+  }
+  .btn a:hover {
+    background: #518569;
+    border: solid 1px #eaf0ed;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 1.8rem;
+  }
 }
 
 /* デザインB（タブレット） */
@@ -795,27 +785,30 @@ a.show {
   .mustHead {
     position: relative;
     margin: 60px 0 0 0;
+    h1 {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      font-size: 4vw;
+      text-shadow: 3px 3px 20px rgba(253, 255, 253, 1);
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      font-weight: 800;
+      letter-spacing: 0.4rem;
+    }
   }
-  .mustHead h1 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    font-size: 4vw;
-    text-shadow: 3px 3px 20px #fdfffd;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    font-weight: 800;
-    letter-spacing: 0.4rem;
-  }
+
   .sidebar {
     display: none;
   }
+
   .container {
     width: 90%;
     margin: 0 auto;
     padding: 30px 0;
   }
+
   /*Tab ドロワー ナビゲーション*/
   nav {
     display: block;
@@ -828,40 +821,45 @@ a.show {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 4;
     opacity: 0;
   }
+
   .open nav {
     right: 0;
     opacity: 1;
   }
+
   nav .inner {
     padding: 0 25px;
   }
+
   nav .inner ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   nav .inner ul li {
     position: relative;
     margin: 0;
     border-bottom: 1px solid #eeeeee;
   }
+
   nav .inner ul li a {
     display: block;
     color: #091911;
     font-size: 1.953125vw;
     padding: 1em;
     text-decoration: none;
-    -webkit-transition-duration: 0.2s;
-            transition-duration: 0.2s;
+    transition-duration: 0.2s;
   }
+
   nav .inner ul li a:hover {
     background: #f5f7f6;
   }
+
   /*Tab ドロワー トグルボタン*/
   .toggle_btn {
     display: block;
@@ -870,11 +868,11 @@ a.show {
     right: 15px;
     width: 30px;
     height: 30px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
     z-index: 5;
   }
+
   .toggle_btn span {
     display: block;
     position: absolute;
@@ -883,56 +881,69 @@ a.show {
     height: 2px;
     background-color: #333;
     border-radius: 4px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   .toggle_btn span:nth-child(1) {
     top: 4px;
   }
+
   .toggle_btn span:nth-child(2) {
     top: 14px;
   }
+
   .toggle_btn span:nth-child(3) {
     bottom: 4px;
   }
+
   .open .toggle_btn span {
     background-color: #333;
   }
+
   .open .toggle_btn span:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-315deg);
     transform: translateY(10px) rotate(-315deg);
   }
+
   .open .toggle_btn span:nth-child(2) {
     opacity: 0;
   }
+
   .open .toggle_btn span:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(315deg);
     transform: translateY(-10px) rotate(315deg);
   }
+
   /*Tab ドロワー ドロップダウン*/
+
   .menu_list .nav_item {
     position: relative;
   }
+
   .nav_item span {
     margin-left: 10px;
   }
+
   .menu_list .nav_item .panel {
     overflow: hidden;
     width: 100%;
     display: none;
   }
+
   .menu_list .nav_item .panel .panel_item {
     border: none;
   }
+
   .menu_list .nav_item {
     display: block;
   }
+
   /*Tab ドロワー マスク*/
   #mask {
     display: none;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   .open #mask {
     display: block;
     position: fixed;
@@ -945,6 +956,7 @@ a.show {
     z-index: 2;
     cursor: pointer;
   }
+
   /*Tab ヘッダーバー*/
   #headbar {
     position: fixed;
@@ -952,27 +964,19 @@ a.show {
     background: #ffffff;
     z-index: 4;
     width: 100%;
-    -webkit-box-shadow: 0px 0px 10px #9a9b9a33;
-            box-shadow: 0px 0px 10px #9a9b9a33;
+    box-shadow: 0px 0px 10px #9a9b9a33;
     height: 60px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   #headbar h1 {
     margin: 0;
     font-size: 100%;
     text-align: center;
   }
+
   /* #headbar h1::before {
     display: inline-block;
     content: "";
@@ -984,11 +988,13 @@ a.show {
     width: 100px;
     padding-right: 20px;
   } */
+
   #headbar a {
     font-size: 2.8vw;
     text-decoration: none;
     color: #256643;
   }
+
   #headbar a::before {
     display: inline-block;
     content: "";
@@ -1000,9 +1006,13 @@ a.show {
     width: 30px;
     padding-right: 40px;
   }
+
+  // サイドバーフッター
   .sideFooter {
     display: none !important;
   }
+
+  //   コンテナトップ
   .top {
     line-height: 2;
     font-size: 2vw;
@@ -1010,75 +1020,71 @@ a.show {
     text-align: center;
     margin: 30px 0;
   }
+
   .info {
-    background: #e8efec;
+    background: $bg-info;
   }
+
   .ir {
     width: 100%;
-  }
-  .ir .fpoint {
-    padding: 10px;
-    background: #fffef5;
-    border: solid 1px #fffef5;
-    border-radius: 3px;
-    display: block;
-    width: 60%;
-    margin-top: 20px;
-    font-size: 12px;
-    text-align: center;
-  }
-  .ir a.link {
-    padding: 10px;
-    background: #ffffff;
-    border: solid 1px #006840;
-    border-radius: 3px;
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link:hover {
-    padding: 10px;
-    background: #006840;
-    border: solid 1px #006840;
-    border-radius: 3px;
-    display: block;
-    margin: 0 auto;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link2 {
-    padding: 10px;
-    background: #ffffff;
-    border: solid 1px #73244c;
-    border-radius: 3px;
-    display: inline-block;
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link2:hover {
-    padding: 10px;
-    background: #73244c;
-    border: solid 1px #fff;
-    border-radius: 3px;
-    display: inline-block;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    .fpoint {
+      padding: 10px;
+      background: #fffef5;
+      border: solid 1px #fffef5;
+      border-radius: 3px;
+      display: block;
+      width: 60%;
+      margin-top: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+    a.link {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link:hover {
+      padding: 10px;
+      background: #006840;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link2 {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #73244c;
+      border-radius: 3px;
+      display: inline-block;
+      width: 100%;
+      font-size: 12px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link2:hover {
+      padding: 10px;
+      background: #73244c;
+      border: solid 1px #fff;
+      border-radius: 3px;
+      display: inline-block;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
   }
   .topBtn {
     position: fixed;
@@ -1090,56 +1096,64 @@ a.show {
     padding: 20px 0;
     line-height: 28px;
     color: #ffffff;
-    line-height: 2.33333;
-    font-size: 1.2rem;
-    letter-spacing: 0.2em;
+    @include fontsize(12, 28);
+    @include tracking(200);
   }
+
   .button {
     background: #ffffff;
-    background: white;
+    background: rgba(255, 255, 255, 1);
     border: solid 1px #256643;
-    -webkit-box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
+    box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
     border-radius: 5px;
   }
+
   footer {
+    //   フッター全体設定
     line-height: 1.3125;
     font-size: 1.171875vw;
     letter-spacing: 0.18em;
-    background: #256643;
+    background: $bg-main;
     color: #fff;
     z-index: 4;
     padding: 30px 0;
     position: relative;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    // フッタークラス
+    .footerHeading {
+      line-height: 1.10526;
+      font-size: 1.5625vw;
+      letter-spacing: 0.18em;
+      margin-bottom: 20px;
+    }
+
+    .footerItemStart {
+      line-height: 2;
+      font-size: 1.171875vw;
+      letter-spacing: 0.18em;
+    }
+
+    .footerItem {
+      line-height: 2;
+      font-size: 1.171875vw;
+      letter-spacing: 0.18em;
+    }
+
+    .footerWrapper {
+      width: 86.98%;
+      margin: 0 auto;
+    }
+
+    li {
+      display: block;
+      margin: 0 15px 15px 0;
+    }
   }
-  footer a {
-    color: #fff;
-    text-decoration: none;
-  }
-  footer .footerHeading {
-    line-height: 1.10526;
-    font-size: 1.5625vw;
-    letter-spacing: 0.18em;
-    margin-bottom: 20px;
-  }
-  footer .footerItemStart {
-    line-height: 2;
-    font-size: 1.171875vw;
-    letter-spacing: 0.18em;
-  }
-  footer .footerItem {
-    line-height: 2;
-    font-size: 1.171875vw;
-    letter-spacing: 0.18em;
-  }
-  footer .footerWrapper {
-    width: 86.98%;
-    margin: 0 auto;
-  }
-  footer li {
-    display: block;
-    margin: 0 15px 15px 0;
-  }
+
   .copy {
     line-height: 2.5;
     font-size: 0.8333333333vw;
@@ -1147,6 +1161,7 @@ a.show {
     text-align: center;
     width: 100%;
   }
+
   /*SP コールボタン*/
   .sp-call {
     position: fixed;
@@ -1159,12 +1174,13 @@ a.show {
     color: #ffffff;
     padding: 20px 0;
     font-size: 14px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
+
+    p {
+      margin-bottom: 10px;
+    }
   }
-  .sp-call p {
-    margin-bottom: 10px;
-  }
+
   .sp-call a {
     color: #ffffff;
     text-decoration: none;
@@ -1172,8 +1188,8 @@ a.show {
     display: inline-block;
     font-size: 25px;
   }
+
   .sp-call a::after {
-    position: -webkit-sticky;
     position: sticky;
     bottom: -8px;
     left: 0;
@@ -1183,9 +1199,9 @@ a.show {
     background: #eeeeee;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+
   .sp-call a:hover::after {
     color: #eeeeee;
     bottom: -4px;
@@ -1203,15 +1219,18 @@ a.show {
   .topBtn:hover {
     opacity: 0.7;
   }
+
   #pageTop {
     position: fixed;
     bottom: 40px;
     right: 20px;
     z-index: 999;
   }
+
   #pageTop i {
     padding-top: 6px;
   }
+
   #pageTop a {
     display: inline-block;
     width: 50px;
@@ -1222,6 +1241,7 @@ a.show {
     color: #fff;
     font-size: 10px;
   }
+
   #pageTop a:hover {
     text-decoration: none;
     opacity: 0.7;
@@ -1231,91 +1251,80 @@ a.show {
   }
   #loading {
     /* 画面いっぱいになる箇所 */
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
-    -webkit-transition: all 1s;
     transition: all 1s;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+
+    &.loaded {
+      opacity: 0;
+      visibility: hidden;
+    }
+
     /* 中のローディングアニメ */
-  }
-  #loading.loaded {
-    opacity: 0;
-    visibility: hidden;
-  }
-  #loading .loader,
-  #loading .loader:before,
-  #loading .loader:after {
-    border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation: load7 1.8s infinite ease-in-out;
-    animation: load7 1.8s infinite ease-in-out;
-  }
-  #loading .loader {
-    color: #bbb;
-    font-size: 5px;
-    margin: 80px auto;
-    position: relative;
-    text-indent: -9999em;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-  }
-  #loading .loader:before,
-  #loading .loader:after {
-    content: "";
-    position: absolute;
-    top: 0;
-  }
-  #loading .loader:before {
-    left: -3.5em;
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-  }
-  #loading .loader:after {
-    left: 3.5em;
-  }
-  @-webkit-keyframes load7 {
-    0%,
-    80%,
-    100% {
-      -webkit-box-shadow: 0 2.5em 0 -1.3em;
-              box-shadow: 0 2.5em 0 -1.3em;
+    .loader,
+    .loader:before,
+    .loader:after {
+      border-radius: 50%;
+      width: 2.5em;
+      height: 2.5em;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation: load7 1.8s infinite ease-in-out;
+      animation: load7 1.8s infinite ease-in-out;
     }
-    40% {
-      -webkit-box-shadow: 0 2.5em 0 0;
-              box-shadow: 0 2.5em 0 0;
+    .loader {
+      color: #bbb;
+      font-size: 5px;
+      margin: 80px auto;
+      position: relative;
+      text-indent: -9999em;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
     }
-  }
-  @keyframes load7 {
-    0%,
-    80%,
-    100% {
-      -webkit-box-shadow: 0 2.5em 0 -1.3em;
-              box-shadow: 0 2.5em 0 -1.3em;
+    .loader:before,
+    .loader:after {
+      content: "";
+      position: absolute;
+      top: 0;
     }
-    40% {
-      -webkit-box-shadow: 0 2.5em 0 0;
-              box-shadow: 0 2.5em 0 0;
+    .loader:before {
+      left: -3.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    .loader:after {
+      left: 3.5em;
+    }
+    @-webkit-keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+    @keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
     }
   }
 }
@@ -1326,74 +1335,51 @@ a.show {
   .mustHead {
     position: relative;
     margin: 0;
+    h1 {
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      font-size: 3.125vw;
+      text-shadow: 3px 3px 20px #fdfffd;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      font-weight: 800;
+      letter-spacing: 1rem;
+    }
   }
-  .mustHead h1 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    font-size: 3.125vw;
-    text-shadow: 3px 3px 20px #fdfffd;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    font-weight: 800;
-    letter-spacing: 1rem;
-  }
+
   .wrapper {
-    display: -ms-grid;
     display: grid;
     /* グリッドレイアウト */
-    -ms-grid-columns: 86.98% 1fr;
-        grid-template-columns: 86.98% 1fr;
+    grid-template-columns: 86.98% 1fr;
   }
+
+  //   コンテナ
   .container {
     width: 83.23%;
     margin: 0 auto;
     padding: 30px 0;
   }
+
   .sidebar {
     height: 100vh;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div {
+      position: fixed;
+      width: 13.02083333vw;
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
-  .sidebar div {
-    position: fixed;
-    width: 13.02083333vw;
-  }
-  .sidebar div a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+
   /*ドロワー ナビゲーション*/
   nav {
     display: block;
@@ -1406,40 +1392,45 @@ a.show {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 6;
     opacity: 0;
   }
+
   .open nav {
     right: 0;
     opacity: 1;
   }
+
   nav .inner {
     padding: 25px;
   }
+
   nav .inner ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
   nav .inner ul li {
     position: relative;
     margin: 0;
     border-bottom: 1px solid #eeeeee;
   }
+
   nav .inner ul li a {
     display: block;
     color: #091911;
     font-size: 1.041666667vw;
     padding: 1em;
     text-decoration: none;
-    -webkit-transition-duration: 0.2s;
-            transition-duration: 0.2s;
+    transition-duration: 0.2s;
   }
+
   nav .inner ul li a:hover {
     background: #f5f7f6;
   }
+
   /*ドロワー トグルボタン*/
   .toggle_btn {
     display: block;
@@ -1448,11 +1439,11 @@ a.show {
     right: 30px;
     width: 30px;
     height: 30px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
     z-index: 6;
   }
+
   .toggle_btn span {
     display: block;
     position: absolute;
@@ -1461,56 +1452,69 @@ a.show {
     height: 2px;
     background-color: #333;
     border-radius: 4px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   .toggle_btn span:nth-child(1) {
     top: 4px;
   }
+
   .toggle_btn span:nth-child(2) {
     top: 14px;
   }
+
   .toggle_btn span:nth-child(3) {
     bottom: 4px;
   }
+
   .open .toggle_btn span {
     background-color: #333;
   }
+
   .open .toggle_btn span:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-315deg);
     transform: translateY(10px) rotate(-315deg);
   }
+
   .open .toggle_btn span:nth-child(2) {
     opacity: 0;
   }
+
   .open .toggle_btn span:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(315deg);
     transform: translateY(-10px) rotate(315deg);
   }
+
   /*ドロワー ドロップダウン*/
+
   .menu_list .nav_item {
     position: relative;
   }
+
   .nav_item span {
     margin-left: 10px;
   }
+
   .menu_list .nav_item .panel {
     overflow: hidden;
     width: 100%;
     display: none;
   }
+
   .menu_list .nav_item .panel .panel_item {
     border: none;
   }
+
   .menu_list .nav_item {
     display: block;
   }
+
   /*ドロワー マスク*/
   #mask {
     display: none;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+
   .open #mask {
     display: block;
     position: fixed;
@@ -1523,8 +1527,10 @@ a.show {
     z-index: 2;
     cursor: pointer;
   }
+
+  // サイドバーフッター
   .sideFooter {
-    height: 190px;
+
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1534,33 +1540,20 @@ a.show {
     padding: 20px 0;
     color: #ffffff;
     font-size: 2.2rem;
-    display: -webkit-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    span {
+      font-size: 1.4rem;
+    }
+    p.scale {
+      margin-top: 15px;
+      font-size: 20px;
+      transform: scale(1.5, 1.5);
+    }
   }
-  .sideFooter span {
-    font-size: 1.4rem;
-  }
-  .sideFooter p.scale {
-    margin-top: 15px;
-    font-size: 20px;
-    -webkit-transform: scale(1.5, 1.5);
-            transform: scale(1.5, 1.5);
-  }
+
+  //   コンテナトップ
   .top {
     line-height: 2;
     font-size: 1.25vw;
@@ -1568,150 +1561,152 @@ a.show {
     text-align: center;
     margin: 60px 0;
   }
+
   .info {
-    background: #e8efec;
+    background: $bg-info;
   }
+
   .ir {
     width: 29.94791667vw;
+    a.link {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link:hover {
+      padding: 10px;
+      background: #006840;
+      border: solid 1px #006840;
+      border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link2 {
+      padding: 10px;
+      background: #ffffff;
+      border: solid 1px #73244c;
+      border-radius: 3px;
+      display: inline-block;
+      width: 60%;
+      font-size: 16px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
+    a.link2:hover {
+      padding: 10px;
+      background: #73244c;
+      border: solid 1px #ffffff;
+      border-radius: 3px;
+      display: inline-block;
+      width: 60%;
+      font-size: 16px;
+      text-align: center;
+      transition: 0.2s;
+      box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
+    }
   }
-  .ir a.link {
-    padding: 10px;
-    background: #ffffff;
-    border: solid 1px #006840;
-    border-radius: 3px;
-    display: block;
-    width: 100%;
-    font-size: 16px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link:hover {
-    padding: 10px;
-    background: #006840;
-    border: solid 1px #006840;
-    border-radius: 3px;
-    display: block;
-    margin: 0 auto;
-    font-size: 16px;
-    text-align: center;
-    color: #fff;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link2 {
-    padding: 10px;
-    background: #ffffff;
-    border: solid 1px #73244c;
-    border-radius: 3px;
-    display: inline-block;
-    width: 60%;
-    font-size: 16px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
-  .ir a.link2:hover {
-    padding: 10px;
-    background: #73244c;
-    border: solid 1px #ffffff;
-    border-radius: 3px;
-    display: inline-block;
-    width: 60%;
-    font-size: 16px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    -webkit-box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
-  }
+
   .button {
     background: #ffffff;
-    background: white;
+    background: rgba(255, 255, 255, 1);
     border: solid 1px #256643;
-    -webkit-box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
-            box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
+    box-shadow: 3px 3px 1px rgba(204, 204, 204, 0.6);
     border-radius: 5px;
   }
+
   .font-tracking6 {
-    line-height: 1.75;
-    font-size: 1.6rem;
-    letter-spacing: 0.18em;
+    @include fontsize(16, 28);
+    @include tracking(180);
   }
+
   .font-tracking7 {
-    line-height: 1.25;
-    font-size: 1.6rem;
-    letter-spacing: 0.18em;
+    @include fontsize(16, 20);
+    @include tracking(180);
   }
+
   footer {
+    //   フッター全体設定
     width: 86.98%;
     line-height: 1.3125;
     font-size: 0.8333333333vw;
     letter-spacing: 0.18em;
-    background: #256643;
+    background: $bg-main;
     color: #fff;
     padding: 30px 0;
     position: relative;
+    a {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    a::after {
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform 0.3s;
+    }
+
+    a:hover::after {
+      transform: scale(1, 1);
+    }
+
+    // フッタークラス
+    .footerHeading {
+      line-height: 1.05;
+      font-size: 1.041666667vw;
+      letter-spacing: 0.18em;
+      margin: 0 0 20px 0;
+    }
+
+    .footerItem {
+      line-height: 1.05;
+      font-size: 0.8333333333vw;
+      letter-spacing: 0.18em;
+    }
+
+    .footerItemStart {
+      line-height: 1.05;
+      font-size: 0.8333333333vw;
+      letter-spacing: 0.18em;
+    }
+
+    .footerWrapper {
+      /* width: 86.98%; 正*/
+      // カスタム
+      width: 90.98%;
+      margin: 0 auto;
+    }
+
+    li {
+      display: block;
+    }
   }
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-  }
-  footer a::after {
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    -webkit-transform: scale(0, 1);
-            transform: scale(0, 1);
-    -webkit-transform-origin: left top;
-            transform-origin: left top;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
-  }
-  footer a:hover::after {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  footer .footerHeading {
-    line-height: 1.05;
-    font-size: 1.041666667vw;
-    letter-spacing: 0.18em;
-    margin: 0 0 20px 0;
-  }
-  footer .footerItem {
-    line-height: 1.05;
-    font-size: 0.8333333333vw;
-    letter-spacing: 0.18em;
-  }
-  footer .footerItemStart {
-    line-height: 1.05;
-    font-size: 0.8333333333vw;
-    letter-spacing: 0.18em;
-  }
-  footer .footerWrapper {
-    /* width: 86.98%; 正*/
-    width: 90.98%;
-    margin: 0 auto;
-  }
-  footer li {
-    display: block;
-  }
+
   #headbar {
     display: none;
   }
+
   #pageTop {
     position: fixed;
     bottom: 190px;
@@ -1719,9 +1714,11 @@ a.show {
     z-index: 3;
     width: 13.02%;
   }
+
   #pageTop i {
     padding-top: 6px;
   }
+
   #pageTop a {
     display: inline-block;
     width: 100% !important;
@@ -1732,11 +1729,13 @@ a.show {
     color: #29704a;
     font-size: 14px;
   }
+
   #pageTop a:hover {
     text-decoration: none;
     opacity: 0.7;
     background: #eee;
   }
+
   .copy {
     line-height: 2.5;
     font-size: 0.8333333333vw;
@@ -1744,6 +1743,7 @@ a.show {
     text-align: center;
     width: 86.98%;
   }
+
   /*SP コールボタン*/
   .sp-call {
     position: fixed;
@@ -1756,12 +1756,13 @@ a.show {
     color: #ffffff;
     padding: 20px 0;
     font-size: 14px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
+
+    p {
+      margin-bottom: 10px;
+    }
   }
-  .sp-call p {
-    margin-bottom: 10px;
-  }
+
   .sp-call a {
     color: #ffffff;
     text-decoration: none;
@@ -1769,8 +1770,8 @@ a.show {
     display: inline-block;
     font-size: 25px;
   }
+
   .sp-call a::after {
-    position: -webkit-sticky;
     position: sticky;
     bottom: -8px;
     left: 0;
@@ -1780,15 +1781,16 @@ a.show {
     background: #eeeeee;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
+
   .sp-call a:hover::after {
     color: #eeeeee;
     bottom: -4px;
     opacity: 1;
     visibility: visible;
   }
+
   .fpoint {
     padding: 10px;
     background: #fffef5;
@@ -1800,6 +1802,7 @@ a.show {
     font-size: 16px;
     text-align: center;
   }
+
   /*トップへ戻るボタン*/
   .topBtn {
     position: fixed;
@@ -1811,9 +1814,8 @@ a.show {
     padding: 34px 0;
     line-height: 28px;
     color: #ffffff;
-    line-height: 1.75;
-    font-size: 1.6rem;
-    letter-spacing: 0.2em;
+    @include fontsize(16, 28);
+    @include tracking(200);
   }
   .topBtn:before {
     position: absolute;
@@ -1832,159 +1834,137 @@ a.show {
     left: 5%;
     width: 90%;
     height: 90%;
-    background: #c43434;
-    /* rgba未対応の古いIE用 */
+    background: rgb(196, 52, 52); /* rgba未対応の古いIE用 */
     background: rgba(196, 52, 52, 0.95);
     text-align: center;
     padding: 10% 0;
     z-index: 1000;
-  }
-  .ie_alert span,
-  .ie_alert p,
-  .ie_alert a {
-    color: #fff;
-  }
-  .ie_alert span {
-    display: block;
-    font-size: 80px;
-  }
-  .ie_alert p {
-    font-size: 20px;
-  }
-  .ie_alert a {
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 20px;
-    padding: 8px 80px;
-    border: solid 1px #fff;
-  }
-  .ie_alert a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    span,
+    p,
+    a {
+      color: #fff;
+    }
+    span {
+      display: block;
+      font-size: 80px;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 8px 80px;
+      border: solid 1px #fff;
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
   }
   .right {
     z-index: 2;
     background: #fff;
     height: 100vh;
-  }
-  .right .logoWrapper {
-    z-index: 2;
-    width: 13.02%;
-    height: 85%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #fff;
-    position: fixed;
-  }
-  .right .logoWrapper a {
-    display: block;
-    width: 100%;
-  }
-  .right .logoWrapper img {
-    width: 35%;
-    display: block;
-    margin: 0 auto;
+    .logoWrapper {
+      z-index: 2;
+      width: 13.02%;
+      height: 85%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      position: fixed;
+      a {
+        display: block;
+        width: 100%;
+      }
+      img {
+        width: 35%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
   #slider {
     display: none;
   }
   #loading {
     /* 画面いっぱいになる箇所 */
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
-    -webkit-transition: all 1s;
     transition: all 1s;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
+
+    &.loaded {
+      opacity: 0;
+      visibility: hidden;
+    }
+
     /* 中のローディングアニメ */
-  }
-  #loading.loaded {
-    opacity: 0;
-    visibility: hidden;
-  }
-  #loading .loader,
-  #loading .loader:before,
-  #loading .loader:after {
-    border-radius: 50%;
-    width: 2.5em;
-    height: 2.5em;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation: load7 1.8s infinite ease-in-out;
-    animation: load7 1.8s infinite ease-in-out;
-  }
-  #loading .loader {
-    color: #bbb;
-    font-size: 5px;
-    margin: 80px auto;
-    position: relative;
-    text-indent: -9999em;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s;
-  }
-  #loading .loader:before,
-  #loading .loader:after {
-    content: "";
-    position: absolute;
-    top: 0;
-  }
-  #loading .loader:before {
-    left: -3.5em;
-    -webkit-animation-delay: -0.32s;
-    animation-delay: -0.32s;
-  }
-  #loading .loader:after {
-    left: 3.5em;
-  }
-  @-webkit-keyframes load7 {
-    0%,
-    80%,
-    100% {
-      -webkit-box-shadow: 0 2.5em 0 -1.3em;
-              box-shadow: 0 2.5em 0 -1.3em;
+    .loader,
+    .loader:before,
+    .loader:after {
+      border-radius: 50%;
+      width: 2.5em;
+      height: 2.5em;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation: load7 1.8s infinite ease-in-out;
+      animation: load7 1.8s infinite ease-in-out;
     }
-    40% {
-      -webkit-box-shadow: 0 2.5em 0 0;
-              box-shadow: 0 2.5em 0 0;
+    .loader {
+      color: #bbb;
+      font-size: 5px;
+      margin: 80px auto;
+      position: relative;
+      text-indent: -9999em;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
     }
-  }
-  @keyframes load7 {
-    0%,
-    80%,
-    100% {
-      -webkit-box-shadow: 0 2.5em 0 -1.3em;
-              box-shadow: 0 2.5em 0 -1.3em;
+    .loader:before,
+    .loader:after {
+      content: "";
+      position: absolute;
+      top: 0;
     }
-    40% {
-      -webkit-box-shadow: 0 2.5em 0 0;
-              box-shadow: 0 2.5em 0 0;
+    .loader:before {
+      left: -3.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+    .loader:after {
+      left: 3.5em;
+    }
+    @-webkit-keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+    @keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
     }
   }
 }
-/*# sourceMappingURL=style.css.map */
