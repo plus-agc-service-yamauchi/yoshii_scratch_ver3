@@ -259,7 +259,6 @@ div.tablebg {
   }
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
-    background-color: rgba(255, 254, 245, 0);
     background-size: cover;
     padding: 50px 50px 50px 0;
     font-size: 1.041666667vw;
