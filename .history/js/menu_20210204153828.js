@@ -80,8 +80,6 @@ $(window).on("scroll", function() {
     "padding": "20px 0",
     "font-size": "2.8rem",
     "transition": ".5s",
-    "display": "flex",
-    "flex-direction": "column",
     });
   } else {
     $(".sideFooter").css({

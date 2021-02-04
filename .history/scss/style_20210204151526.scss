@@ -1540,15 +1540,12 @@ a.show {
     width: 13.02% !important;
     text-align: center;
     padding: 20px 0;
+    line-height: 28px;
     color: #ffffff;
     font-size: 2.8rem;
-    display: flex;
-    flex-direction: column;
-    span {
-      font-size: 1.4rem;
-    }
-    p {
-      margin-top: 15px;
+    span{
+      font-size:1.4rem;
+      margin-bottom:20px;
     }
   }
 
@@ -1727,7 +1724,6 @@ a.show {
     line-height: 50px;
     color: #29704a;
     font-size: 14px;
-    margin-bottom: 25px;
   }
 
   #pageTop a:hover {
@@ -1741,7 +1737,7 @@ a.show {
     font-size: 0.8333333333vw;
     letter-spacing: 0.1em;
     text-align: center;
-    width: 86.98%;
+    width:86.98%;
   }
 
   /*SP コールボタン*/
@@ -1869,7 +1865,7 @@ a.show {
     .logoWrapper {
       z-index: 2;
       width: 13.02%;
-      height: 85%;
+      height: 89%;
       display: flex;
       justify-content: center;
       align-items: center;
