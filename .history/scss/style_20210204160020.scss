@@ -284,7 +284,7 @@ nav .inner ul li a:hover {
     border-radius: 3px;
     display: block;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     transition: 0.2s;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -296,7 +296,7 @@ nav .inner ul li a:hover {
     border-radius: 3px;
     display: block;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     color: #fff;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -307,8 +307,8 @@ nav .inner ul li a:hover {
     border: solid 1px #73244c;
     border-radius: 3px;
     display: inline-block;
-    width: 70%;
-    font-size: 10px;
+    width: 100%;
+    font-size: 12px;
     text-align: center;
     transition: 0.2s;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -319,7 +319,8 @@ nav .inner ul li a:hover {
     border: solid 1px #fff;
     border-radius: 3px;
     display: inline-block;
-    font-size: 1px;
+    margin: 0 auto;
+    font-size: 12px;
     text-align: center;
     color: #fff;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.6);
@@ -527,7 +528,7 @@ footer {
   display: block;
   width: 80%;
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -655,7 +656,7 @@ a.show {
 
 // サイドバーフッター
 .sideFooter {
-  display: none !important;
+  display: none;
 }
 
 .right {
@@ -1080,6 +1081,7 @@ a.show {
       border: solid 1px #fff;
       border-radius: 3px;
       display: inline-block;
+      margin: 0 auto;
       font-size: 12px;
       text-align: center;
       color: #fff;
@@ -1530,7 +1532,7 @@ a.show {
 
   // サイドバーフッター
   .sideFooter {
-    display: block !important;
+    display: block;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -1540,7 +1542,7 @@ a.show {
     padding: 20px 0;
     color: #ffffff;
     font-size: 2.8rem;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     span {
       font-size: 1.4rem;
@@ -1706,7 +1708,7 @@ a.show {
 
   #pageTop {
     position: fixed;
-    bottom: 103px;
+    bottom: 95px;
     right: 0;
     z-index: 3;
     width: 13.02%;
@@ -1725,6 +1727,7 @@ a.show {
     line-height: 50px;
     color: #29704a;
     font-size: 14px;
+    margin-bottom: 25px;
   }
 
   #pageTop a:hover {
