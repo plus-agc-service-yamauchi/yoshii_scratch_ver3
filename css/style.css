@@ -1547,8 +1547,11 @@ a.show {
   .sideFooter span {
     font-size: 1.4rem;
   }
-  .sideFooter p {
+  .sideFooter p.scale {
     margin-top: 15px;
+    font-size: 20px;
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
   }
   .top {
     line-height: 2;
