@@ -344,5 +344,8 @@ div.tablebg {
     -ms-grid-columns: 830px 1fr !important;
         grid-template-columns: 830px 1fr !important;
   }
+  .nm10 {
+    margin-top: -6px;
+  }
 }
 /*# sourceMappingURL=about.css.map */
