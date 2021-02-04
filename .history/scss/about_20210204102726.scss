@@ -1,21 +1,11 @@
-@charset "UTF-8";
 /* デザインA（スマートフォン） */
 .card {
   background: #fff;
   width: 100%;
   height: 8rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-size: 3.717391304vw;
   color: #256643;
   border-radius: 10px;
@@ -35,41 +25,30 @@
 }
 
 .bg-flower_text_title {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #996580;
   background: rgba(255, 254, 245, 0.8);
   font-size: 3.6rem;
   padding: 15px 30px;
   border-radius: 3px;
   margin-bottom: 40px;
+  span {
+    font-size: 20px;
+  }
 }
-
-.bg-flower_text_title span {
-  font-size: 20px;
-}
-
 .bg-flower_text_title_middle_one {
   text-indent: 30px;
   margin-bottom: 10px;
 }
-
 .bg-flower_text_title_middle_two {
   text-indent: 30px;
   margin-bottom: 20px;
 }
-
 .bg-flower_text_title_bottom {
   text-indent: 30px;
   font-size: 1.6rem;
 }
-
 .bg-flower_sp_img {
   width: 90%;
   margin: 0 auto;
@@ -78,10 +57,7 @@
 
 .grid-pc-center {
   justify-items: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 table {
@@ -109,16 +85,13 @@ td.tdr {
   letter-spacing: 1.8;
   padding: 20px 0;
   color: #091911;
+  p {
+    font-size: 10px;
+  }
 }
-
-td.tdr p {
-  font-size: 10px;
-}
-
 table {
   width: 100%;
 }
-
 div.tablebg {
   background: #fff;
   padding: 20px;
@@ -131,22 +104,14 @@ div.tablebg {
     background: #fff;
     width: 100%;
     height: 80px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 2.6vw;
     color: #256643;
     border-radius: 10px;
   }
+
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
     background-color: rgba(255, 254, 245, 0.5);
@@ -156,37 +121,22 @@ div.tablebg {
     font-size: 2.3vw;
     line-height: 2.4rem;
     letter-spacing: 1.8;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
   .bg-flower_text_title {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: #996580;
     background: rgba(255, 254, 245, 0.9);
     font-size: 2.6rem;
     padding: 15px 30px;
     border-radius: 3px;
     margin-bottom: 40px;
-  }
-  .bg-flower_text_title span {
-    font-size: 16px;
+    span {
+      font-size: 16px;
+    }
   }
   .bg-flower_text_title_middle_one {
     text-indent: 30px;
@@ -201,7 +151,6 @@ div.tablebg {
     font-size: 1.2rem;
   }
 }
-
 td.tdl {
   font-size: 14px;
   line-height: 2.4rem;
@@ -218,16 +167,14 @@ td.tdr {
   letter-spacing: 1.8px;
   padding: 20px 20px;
   color: #091911;
-}
-
-td.tdr p {
-  font-size: 10px;
+  p {
+    font-size: 10px;
+  }
 }
 
 table {
   width: 100%;
 }
-
 div.tablebg {
   background: #fff;
   padding: 20px;
@@ -241,62 +188,40 @@ div.tablebg {
     background: #fff;
     width: 100%;
     height: 150px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 1.25vw;
     color: #256643;
     border-radius: 10px;
   }
+
   .bg-flower {
     background: url(../img/bg-flower.jpg) no-repeat;
     background-color: rgba(255, 254, 245, 0);
+
     background-size: cover;
     padding: 50px 50px 50px 0;
     font-size: 1.041666667vw;
     line-height: 2.2rem;
     letter-spacing: 1.8;
     height: 300px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
   }
   .bg-flower_text_title {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: #996580;
     background: rgba(255, 254, 245, 0.8);
     font-size: 3.6rem !important;
     padding: 15px 30px;
     border-radius: 3px;
     margin-bottom: 40px;
-  }
-  .bg-flower_text_title span {
-    font-size: 20px;
+    span {
+      font-size: 20px;
+    }
   }
   .bg-flower_text_title_middle_one {
     text-indent: 30px;
@@ -324,25 +249,23 @@ div.tablebg {
     line-height: 2.4rem;
     letter-spacing: 1.8px;
     width: 25%;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px;
     color: #091911;
   }
+
   td.tdr {
     width: 75%;
     font-size: 16px;
     line-height: 2.4rem;
     letter-spacing: 1.8px;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 20px;
     color: #091911;
-  }
-  td.tdr p {
-    font-size: 12px;
+    p {
+      font-size: 12px;
+    }
   }
   .grid-pc-2-1 {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 830px 1fr !important;
-        grid-template-columns: 830px 1fr !important;
+    grid-template-columns: 830px 1fr !important;
   }
 }
-/*# sourceMappingURL=about.css.map */
