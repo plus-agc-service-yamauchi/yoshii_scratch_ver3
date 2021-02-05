@@ -789,6 +789,10 @@ a.show {
   letter-spacing: 1.8rem;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 /* デザインB（タブレット） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   /* タブレット用レイアウト 600px以上の範囲に収めるデザインはこの中に記述 */
@@ -1317,6 +1321,9 @@ a.show {
       -webkit-box-shadow: 0 2.5em 0 0;
               box-shadow: 0 2.5em 0 0;
     }
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
 }
 
@@ -1989,6 +1996,9 @@ a.show {
       -webkit-box-shadow: 0 2.5em 0 0;
               box-shadow: 0 2.5em 0 0;
     }
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
