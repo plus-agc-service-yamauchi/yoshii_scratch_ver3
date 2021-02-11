@@ -202,10 +202,10 @@ nav .inner ul li a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -213,31 +213,38 @@ nav .inner ul li a:hover {
 }
 
 #headbar span {
-  font-size: 70%;
+  font-size: 50%;
+  display: block;
+  letter-spacing: 3px;
 }
 
 #headbar h1 {
-  margin: 0;
+  margin-left: 20px;
+}
+
+#headbar h1 span.headbar_sp_logo {
+  display: block;
   font-size: 100%;
-  text-align: center;
+  letter-spacing: 3px;
+  margin-top: 3px;
 }
 
-#headbar a {
-  font-size: 5vw;
-  text-decoration: none;
-  color: #256643;
-}
-
-#headbar a::before {
+#headbar h1 span.headbar_sp_logo::before {
   display: inline-block;
   content: "";
   background-image: url(../img/logo_sp.svg);
   background-repeat: no-repeat;
   background-size: contain;
   vertical-align: top;
-  height: 25px;
-  width: 30px;
-  padding-right: 30px;
+  height: 20px;
+  width: 20px;
+  padding-right: 20px;
+}
+
+#headbar a {
+  font-size: 5vw;
+  text-decoration: none;
+  color: #256643;
 }
 
 .top {
@@ -963,19 +970,40 @@ a.show {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  #headbar span {
+    font-size: 50%;
+    display: block;
+    letter-spacing: 3px;
+  }
   #headbar h1 {
-    margin: 0;
+    margin-left: 20px;
     font-size: 100%;
-    text-align: center;
+  }
+  #headbar h1 span.headbar_sp_logo {
+    display: block;
+    font-size: 100%;
+    letter-spacing: 3px;
+    margin-top: 3px;
+  }
+  #headbar h1 span.headbar_sp_logo::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../img/logo_sp.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: top;
+    height: 23px;
+    width: 25px;
+    padding-right: 25px;
   }
   /* #headbar h1::before {
     display: inline-block;
@@ -993,17 +1021,17 @@ a.show {
     text-decoration: none;
     color: #256643;
   }
-  #headbar a::before {
-    display: inline-block;
-    content: "";
-    background-image: url(../img/logo_sp.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: top;
-    height: 30px;
-    width: 30px;
-    padding-right: 40px;
-  }
+  /* #headbar a::before {
+        display: inline-block;
+        content: "";
+        background-image: url(../img/logo_sp.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: top;
+        height: 30px;
+        width: 30px;
+        padding-right: 40px;
+    } */
   .sideFooter {
     display: none !important;
   }

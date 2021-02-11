@@ -228,7 +228,6 @@ nav .inner ul li a:hover {
     span {
         font-size: 50%;
         display: block;
-        letter-spacing: 3px;
     }
 }
 
@@ -238,7 +237,6 @@ nav .inner ul li a:hover {
         display: block;
         font-size: 100%;
         letter-spacing: 3px;
-        margin-top: 3px;
     }
     span.headbar_sp_logo::before {
         display: inline-block;
@@ -247,9 +245,9 @@ nav .inner ul li a:hover {
         background-repeat: no-repeat;
         background-size: contain;
         vertical-align: top;
-        height: 20px;
-        width: 20px;
-        padding-right: 20px;
+        height: 25px;
+        width: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -988,7 +986,6 @@ a.show {
         span {
             font-size: 50%;
             display: block;
-            letter-spacing: 3px;
         }
     }
     #headbar h1 {

@@ -228,17 +228,15 @@ nav .inner ul li a:hover {
     span {
         font-size: 50%;
         display: block;
-        letter-spacing: 3px;
     }
 }
 
 #headbar h1 {
-    margin-left: 20px;
+    margin: 0;
     span.headbar_sp_logo {
         display: block;
         font-size: 100%;
         letter-spacing: 3px;
-        margin-top: 3px;
     }
     span.headbar_sp_logo::before {
         display: inline-block;
@@ -247,9 +245,9 @@ nav .inner ul li a:hover {
         background-repeat: no-repeat;
         background-size: contain;
         vertical-align: top;
-        height: 20px;
-        width: 20px;
-        padding-right: 20px;
+        height: 25px;
+        width: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -985,32 +983,10 @@ a.show {
         display: flex;
         justify-content: start;
         align-items: center;
-        span {
-            font-size: 50%;
-            display: block;
-            letter-spacing: 3px;
-        }
     }
     #headbar h1 {
-        margin-left: 20px;
+        margin: 0;
         font-size: 100%;
-        span.headbar_sp_logo {
-            display: block;
-            font-size: 100%;
-            letter-spacing: 3px;
-            margin-top: 3px;
-        }
-        span.headbar_sp_logo::before {
-            display: inline-block;
-            content: "";
-            background-image: url(../img/logo_sp.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            vertical-align: top;
-            height: 23px;
-            width: 25px;
-            padding-right: 25px;
-        }
     }
     /* #headbar h1::before {
     display: inline-block;
