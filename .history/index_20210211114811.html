@@ -6,6 +6,7 @@
     <meta name="description" content="1935（昭和8）年創業。深浦町の皆様に支えられて８０有余年。時代の流れに合わせた様々なお葬式に、まごころ込めてご奉仕させていただきます。">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Plus.Co,.LTD - Designed by Mayuko Tanabe, Coded by Tomoya Yamauchi">
     <meta property="og:title" content="">
     <meta property="og:type" content="">
     <meta property="og:url" content="">
@@ -14,12 +15,16 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/index.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/common.min.css" />
     <link rel="stylesheet" href="css/destyle.css" />
 </head>
 
 <body>
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
     <header>
         <!-- SP ヘッダーバー -->
         <div id="headbar">
@@ -133,13 +138,12 @@
                             </h2>
                         </div>
                         <p class="text-sp-left text-tab-center text-pc-center">
-                            １９３５（昭和8）年創業。深浦町の皆様に支えられて８０有余年。<br />
-                            時代の流れに合わせた様々なお葬式に、まごころ込めてご奉仕させていただきます。
+                            １９３５（昭和8）年創業。深浦町の皆様に支えられて８０有余年。<br /> 時代の流れに合わせた様々なお葬式に、まごころ込めてご奉仕させていただきます。
                         </p>
                     </div>
                 </div>
                 <div class="bg-sub">
-                    <div class="container py30">
+                    <div class="container py30 overflow-x-hidden">
                         <div class="mb80">
                             <div class="spHidden tabVisible pcVisible">
                                 <div class="grid-pc-2 grid-tab-2">
@@ -159,7 +163,7 @@
                             </div>
                             <!-- SP -->
                             <div class="mb30 spVisible tabHidden pcHidden animate__animated animate__fadeInUp animate__delay-2s">
-                                <img src="img/top_sp_1.png" alt="" class="img100 img-tab-100" />
+                                <img src="img/top_card_1.png" alt="" class="img100 img-tab-100" />
                                 <div class="item">
                                     <h3 class="text-main">吉井造花店について</h3>
                                     <p>
@@ -291,9 +295,12 @@
                                 <div class="mb30">
                                     <p class="fpoint">ふかちゃんポイント付与（一部を除く。）</p>
                                 </div>
-                                <div class="grid-sp-2 grid-pc-2 grid-tab-2 grid-col-gap20 mb20">
-                                    <a href="https://www.zensoren.or.jp" target="_blank" class="link">全日本葬祭業共同組合</a>
+                                <div class="grid-sp-2 grid-pc-2 grid-tab-2 grid-row-gap20 grid-col-gap20 mb20">
+                                    <a href="https://www.zensoren.or.jp" target="_blank" class="link">全日本葬祭業協同組合</a>
                                     <a href="http://www.younet-aomori.jp/contact.html" target="_blank" class="link">青森新生活互助会代理店</a>
+                                </div>
+                                <div class="grid-sp-1 grid-pc-1 grid-tab-2 grid-row-gap20 grid-col-gap20 mb20">
+                                    <a href="http://www.jfn87.co.jp/" target="_blank" class="link2">JFNジャパンフラワーネットワーク</a>
                                 </div>
                                 <div>
                                     <img src="img/airpay_h.png" alt="" class="img100 img-tab-100 img-pc-100">
@@ -306,23 +313,22 @@
                     </div>
                 </div>
             </div>
+            <!-- サイドバー -->
             <div class="right">
-                <!-- サイドバー -->
-                <div class="sidebar">
-                    <div>
-                        <a href="index.html"><img src="img/logo.svg" alt="" class="img-pc-50" /></a>
-                    </div>
-                    <div class="sideFooter">
-                        <p>お問い合わせはこちら</p>
-                        <p>
-                            <a href="tel:0173-74-2033">&phone; 0173-74-2033</a>
-                        </p>
-                    </div>
+                <div class="logoWrapper">
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
                 </div>
-            </div>
-        </div>
+                <p id="pageTop"><a href="#">TOP▲</a></p>
+                <div class="sideFooter">
+                    <span>お問い合わせはこちら</span>
+                                        <span style="margin:20px 0 10px 0;">電&nbsp;話</span>
+                                        <p class="scale">
+                                            <a href="tel:0173-74-2033">0173-74-2033</a>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
     </main>
-    <p id="pageTop"><a href="#">TOP▲</a></p>
     <!-- フッター -->
     <footer>
         <div class="spVisible tabHidden pcHidden">
@@ -338,9 +344,9 @@
                 <label for="label3">お葬式プランと安置室のご案内</label>
                 <div class="accshow">
                     <a class="show" href="plan.html#anchor_1">一般葬プラン</a>
-                    <a class="show" href="plan.html#anchor_2">家族葬プラン</a>
+                    <a class="show" href="plan.html#anchor_2">自宅葬プラン</a>
                     <a class="show" href="plan.html#anchor_3">安置室プラン</a>
-                    <a class="show" href="plan.html_anchor_4">安置室について</a>
+                    <a class="show" href="plan.html#anchor_4">安置室について</a>
                 </div>
                 <input type="checkbox" id="label4" class="cssacc" />
                 <label for="label4">御供物・御供花のご注文</label>
@@ -370,9 +376,9 @@
                         <a href="plan.html">お葬式プランと安置室のご案内</a></span>
                     </li>
                     <li class="footerItemStart"><a href="plan.html#anchor_1">一般葬プラン</a></li>
-                    <li class="footerItem"><a href="plan.html#anchor_2">家族葬プラン</a></li>
+                    <li class="footerItem"><a href="plan.html#anchor_2">自宅葬プラン</a></li>
                     <li class="footerItem"><a href="plan.html#anchor_3">安置室プラン</a></li>
-                    <li class="footerItem"><a href="plan.html_anchor_4">安置室について</a></li>
+                    <li class="footerItem"><a href="plan.html#anchor_4">安置室について</a></li>
                 </ul>
                 <ul>
                     <li class="footerHeading"><a href="order.html">御供物のご注文</a></li>
@@ -392,28 +398,30 @@
     <script src="js/slide.min.js"></script>
     <script src="js/scroll.min.js"></script>
     <script src="js/returnTop.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $('#slider').fadeIn(100);
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            const spinner = document.getElementById('loading');
+            spinner.classList.add('loaded');
+        }
+    </script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-    window.ga = function() { ga.q.push(arguments) };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('set', 'anonymizeIp', true);
-    ga('set', 'transport', 'beacon');
-    ga('send', 'pageview')
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-<script>
-    $(window).on('scroll', function () {
-var doch = $(document).innerHeight(); //ページ全体の高さ
-var winh = $(window).innerHeight(); //ウィンドウの高さ
-var bottom = doch - winh; //ページ全体の高さ - ウィンドウの高さ = ページの最下部位置
-if (bottom <= $(window).scrollTop()) {
-//一番下までスクロールした時に実行
-console.log("最底辺！");
-}
-});
-</script>
 </body>
 
 </html>
